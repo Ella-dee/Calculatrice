@@ -8,6 +8,7 @@ import javax.swing.border.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.ArrayList;
 
 import static java.awt.Color.red;
 /**
@@ -71,6 +72,8 @@ public class Fenetre extends JFrame {
     private Bouton bMinus = new Bouton("-");
     private Bouton bMultiply = new Bouton("*");
     private Bouton bDivide = new Bouton("/");
+    //Ajout d'un tableau pour stocker les entrées utilisateur
+    ArrayList inputs = new ArrayList();
 
     public Fenetre() {
         //On initialise la JFrame
@@ -158,6 +161,7 @@ public class Fenetre extends JFrame {
         //On initialise la calculatrice
         this.calculatrice = new Calcultatrice();
 
+
         //On place un écouteur sur la calculatrice
         this.calculatrice.addObservateur(new Observateur() {
                 public void update(String screenNumber) {
@@ -173,13 +177,20 @@ public class Fenetre extends JFrame {
             Bouton bouton = (Bouton)e.getSource();
             if (bouton == bCancel){
                 screened.setText( "" );
+                inputs.removeAll(inputs);
             }
             else {
                 String userInput = bouton.getText();
-                screened.setText( userInput );
+                inputs.add(userInput);
+                String txt = "";
+                for(int i=0;i<inputs.size();i++){
+                    txt += inputs.get(i);
+                }
+                screened.setText(txt);
             }
         }
     }
+
     public static void main(String[] args) {
         Fenetre fen = new Fenetre();
     }
