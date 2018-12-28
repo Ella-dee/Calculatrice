@@ -1,5 +1,7 @@
 package com.elodie.calculatrice.vue;
 
+import com.elodie.calculatrice.model.Calcultatrice;
+
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -15,10 +17,6 @@ public class Bouton extends JButton implements MouseListener {
         this.addMouseListener( this );
     }
 
-    public static String getName(Bouton bouton){
-        String name = bouton.getName();
-        return name;
-    }
     @Override
     public void mouseClicked(MouseEvent e) {
     }

@@ -2,8 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="719f3605-9a69-4669-a9e2-5090e7a2bdfd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/Fenetre$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/Fenetre$BoutonListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/Fenetre$BoutonListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/Fenetre.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/Fenetre.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/model/Calcultatrice.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/model/Calcultatrice.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/oberserver/Observable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/oberserver/Observateur.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/vue/Bouton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/vue/Bouton.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/elodie/calculatrice/Fenetre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/Fenetre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/elodie/calculatrice/model/Calcultatrice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/model/Calcultatrice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/elodie/calculatrice/oberserver/Observable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/elodie/calculatrice/oberserver/Observateur.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/elodie/calculatrice/vue/Bouton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/vue/Bouton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GarageOCR/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../GarageOCR/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GarageOCR/garage.txt" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,50 +32,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/elodie/calculatrice/Fenetre.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="178" column="16" lean-forward="true" selection-start-line="178" selection-start-column="16" selection-end-line="178" selection-end-column="16" />
+            <state relative-caret-position="161">
+              <caret line="180" column="50" selection-start-line="180" selection-start-column="50" selection-end-line="180" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#6556#6557#0" expanded="true" />
-                <element signature="e#6626#6627#0" expanded="true" />
-                <element signature="e#7388#7389#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/elodie/calculatrice/oberserver/Observateur.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/elodie/calculatrice/vue/Bouton.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#mousePressed#0;class#Bouton#0" />
-                <element signature="method#mouseReleased#0;class#Bouton#0" />
-                <element signature="method#mouseEntered#0;class#Bouton#0" />
-                <element signature="method#mouseExited#0;class#Bouton#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/elodie/calculatrice/model/Calcultatrice.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#14288#14289#0" expanded="true" />
+                <element signature="e#14331#14332#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -88,6 +65,7 @@
         <option value="$PROJECT_DIR$/src/com/elodie/calculatrice/oberserver/Observateur.java" />
         <option value="$PROJECT_DIR$/src/com/elodie/calculatrice/vue/Main.java" />
         <option value="$PROJECT_DIR$/src/com/elodie/calculatrice/vue/Fenetre.java" />
+        <option value="$PROJECT_DIR$/src/com/elodie/calculatrice/model/TEST.java" />
         <option value="$PROJECT_DIR$/src/com/elodie/calculatrice/model/Calcultatrice.java" />
         <option value="$PROJECT_DIR$/src/com/elodie/calculatrice/vue/Bouton.java" />
         <option value="$PROJECT_DIR$/src/com/elodie/calculatrice/Fenetre.java" />
@@ -95,8 +73,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="670" />
-    <option name="width" value="703" />
+    <option name="x" value="-7" />
+    <option name="width" value="697" />
     <option name="height" value="735" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -106,10 +84,50 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Calcultrice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Calcultrice" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Calcultrice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Calcultrice" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Calcultrice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Calcultrice" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="calculatrice" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Calcultrice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Calcultrice" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="calculatrice" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Calcultrice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Calcultrice" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="calculatrice" type="462c0819:PsiDirectoryNode" />
+              <item name="vue" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545606109395" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546001767912" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -178,7 +196,14 @@
       <option name="project" value="LOCAL" />
       <updated>1545408337121</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="affichage des boutons cliqués, stockage dans un array, effacement lorsque bouton cancel appuyé">
+      <created>1545606180236</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1545606180236</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -194,7 +219,7 @@
       <window_info content_ui="combo" id="Project" order="6" weight="0.24962178" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3289689" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32405892" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -203,6 +228,7 @@
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3289689" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3289689" />
+      <window_info anchor="bottom" id="Inspection Results" order="11" weight="0.3289689" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -219,21 +245,18 @@
     <MESSAGE value="ajout version 1.0" />
     <MESSAGE value="ajout de la méthode interne BoutonListener dans la Classe Fenetre / ajout des appels addBoutonListener aux boutons / ajout de la condition effacer texte si le bouton &quot;C&quot; est cliqué" />
     <MESSAGE value="ajout de la récupération du texte du bouton afin de l'afficher dans l'écran d'affichage lorsqu'il est cliqué" />
-    <option name="LAST_COMMIT_MESSAGE" value="ajout de la récupération du texte du bouton afin de l'afficher dans l'écran d'affichage lorsqu'il est cliqué" />
+    <MESSAGE value="affichage des boutons cliqués, stockage dans un array, effacement lorsque bouton cancel appuyé" />
+    <option name="LAST_COMMIT_MESSAGE" value="affichage des boutons cliqués, stockage dans un array, effacement lorsque bouton cancel appuyé" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/elodie/calculatrice/oberserver/Observable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/elodie/calculatrice/oberserver/Observable.java" />
     <entry file="file://$PROJECT_DIR$/src/com/elodie/calculatrice/vue/Main.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/elodie/calculatrice/oberserver/Observateur.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/elodie/calculatrice/model/TEST.java" />
     <entry file="file://$PROJECT_DIR$/src/com/elodie/calculatrice/vue/Bouton.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="272">
+          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#mousePressed#0;class#Bouton#0" />
@@ -246,30 +269,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/elodie/calculatrice/model/Calcultatrice.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+        <state relative-caret-position="42">
+          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/elodie/calculatrice/oberserver/Observateur.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/elodie/calculatrice/Fenetre.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="178" column="16" lean-forward="true" selection-start-line="178" selection-start-column="16" selection-end-line="178" selection-end-column="16" />
+        <state relative-caret-position="161">
+          <caret line="180" column="50" selection-start-line="180" selection-start-column="50" selection-end-line="180" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#6556#6557#0" expanded="true" />
-            <element signature="e#6626#6627#0" expanded="true" />
-            <element signature="e#7388#7389#0" expanded="true" />
+            <element signature="e#14288#14289#0" expanded="true" />
+            <element signature="e#14331#14332#0" expanded="true" />
           </folding>
         </state>
       </provider>
