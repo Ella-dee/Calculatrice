@@ -148,13 +148,11 @@ public class Fenetre extends JFrame {
                     inputs.clear();
                     break;
                 case "=":
-                    String result = "";
-                    screened.setText( result );
+                    equalOp();
                     break;
                     default:
                         inputs.add( userInput );
                         if (Arrays.asList( ops ).contains( userInput )) {
-                            boolean operatorIsClicked = true;
                             clickedOperator = userInput;
                             /**
                              * lire le tableau inputs
@@ -197,98 +195,85 @@ public class Fenetre extends JFrame {
         str.trim();
         return sb.substring( 0, sb.length());
     }
+    public void equalOp() {
+        String lastTrim = myTrimString( inputs.toString(), "" );
+        String[] findLastOperator = lastTrim.split( "[0-9.]" );
+        String lastOperator = myTrimString( findLastOperator[1], "" );
+        String [] nbrACalculer = lastTrim.split("[+]|-|[*]|/");
+        String firstString = myTrimString(nbrACalculer[0], "");
+        String secondString = myTrimString(nbrACalculer[1], "");
+        double firstNbr = Double.parseDouble( firstString );
+        double secondNbr = Double.parseDouble( secondString );
+        double res = 0;
+        if (Arrays.asList( ops ).contains( lastOperator )) {
+            switch (lastOperator) {
+                case "+":
+                    res = firstNbr + secondNbr;
+                    String resString = Double.toString(res);
+                    break;
+                case "-":
+                    res = firstNbr - secondNbr;
+                    break;
+                case "*":
+                    res = firstNbr * secondNbr;
+                    break;
+                case "/":
+                    res = firstNbr / secondNbr;
+                    break;
+            }
+            String resString = Double.toString(res);
+            inputs.clear();
+            inputs.add(resString);
+        }
+    }
     public  void plusOp(){
         String [] nbrACalculer = inputs.toString().split("[+]|-|[*]|/");
         String firstString = myTrimString(nbrACalculer[0], "");
         String secondString = myTrimString(nbrACalculer[1], "");
         if(secondString.length()>=1){
-            System.out.println( nbrACalculer );
-            System.out.println( firstString );
-            System.out.println( secondString );
             double firstNbr = Double.parseDouble( firstString );
-            System.out.println( firstNbr );
-            System.out.println( "vous avez choisi l'addition:" );
-            System.out.println( firstString +" + "+secondString);
             double secondNbr = Double.parseDouble( secondString );
             double res = firstNbr+secondNbr;
             String resString = Double.toString(res);
-            System.out.println( resString );
             inputs.clear();
             inputs.add(resString);
             inputs.add( clickedOperator );
-            System.out.println( inputs.toString() );
+
         }
     }
     public  void minusOp(){
         String [] nbrACalculer = inputs.toString().split("[+]|-|[*]|/");
         String firstString = myTrimString(nbrACalculer[0], "");
         String secondString = myTrimString(nbrACalculer[1], "");
-
-
         if(secondString.length()>=1){
-
-            System.out.println( nbrACalculer );
-            System.out.println( firstString );
-            System.out.println( secondString );
-
             double firstNbr = Double.parseDouble( firstString );
-
-            System.out.println( firstNbr );
-            System.out.println( "vous avez choisi la soustraction" );
-            System.out.println( firstString +" - "+secondString);
             double secondNbr = Double.parseDouble( secondString );
             double res = firstNbr-secondNbr;
             String resString = Double.toString(res);
-            System.out.println( resString );
             inputs.clear();
             inputs.add(resString);
             inputs.add( clickedOperator );
-            System.out.println( inputs.toString() );
         }
     }
     public  void multiplyOp(){
         String [] nbrACalculer = inputs.toString().split("[+]|-|[*]|/");
         String firstString = myTrimString(nbrACalculer[0], "");
         String secondString = myTrimString(nbrACalculer[1], "");
-
-
         if(secondString.length()>=1){
-
-            System.out.println( nbrACalculer );
-            System.out.println( firstString );
-            System.out.println( secondString );
-
             double firstNbr = Double.parseDouble( firstString );
-
-            System.out.println( firstNbr );
-            System.out.println( "vous avez choisi la multiplication" );
-            System.out.println( firstString +" * "+secondString);
             double secondNbr = Double.parseDouble( secondString );
             double res = firstNbr*secondNbr;
             String resString = Double.toString(res);
-            System.out.println( resString );
             inputs.clear();
             inputs.add(resString);
             inputs.add( clickedOperator );
-            System.out.println( inputs.toString() );
         }
     }    public  void divideOp(){
         String [] nbrACalculer = inputs.toString().split("[+]|-|[*]|/");
         String firstString = myTrimString(nbrACalculer[0], "");
         String secondString = myTrimString(nbrACalculer[1], "");
-
-
         if(secondString.length()>=1){
-
-            System.out.println( nbrACalculer );
-            System.out.println( firstString );
-            System.out.println( secondString );
-
             double firstNbr = Double.parseDouble( firstString );
-
-            System.out.println( firstNbr );
-            System.out.println( "vous avez choisi la division: " );
-            System.out.println( firstString +" / "+secondString);
             double secondNbr = Double.parseDouble( secondString );
             double res = firstNbr/secondNbr;
             String resString = Double.toString(res);
@@ -296,7 +281,6 @@ public class Fenetre extends JFrame {
             inputs.clear();
             inputs.add(resString);
             inputs.add( clickedOperator );
-            System.out.println( inputs.toString() );
         }
     }
 
