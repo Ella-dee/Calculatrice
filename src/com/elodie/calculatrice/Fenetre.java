@@ -148,7 +148,7 @@ class Fenetre extends JFrame {
      *     <li>appuyer sur "=" soit égal</li>
      *     <li>appuyer sur toute autre touche</li>
      *</ul>
-    **/
+     **/
     class BoutonListener implements ActionListener {
 
         /**<p>Le détail des différentes actions:</p>
@@ -217,7 +217,7 @@ class Fenetre extends JFrame {
             }
             StringBuilder txt = new StringBuilder();
             for (Object input : inputs) {
-                    txt.append( input );
+                txt.append( input );
             }
 
             screened.setText( txt.toString() );
@@ -263,7 +263,6 @@ class Fenetre extends JFrame {
         for(String s : findLastOperator){
             if(Arrays.asList( ops ).contains( s )){
                 lastOperator = s;
-                System.out.println( s );
             }
         }
         String [] nbrACalculer = lastTrim.split("[+]|-|[*]|/");
@@ -284,6 +283,9 @@ class Fenetre extends JFrame {
                     res = firstNbr * secondNbr;
                     break;
                 case "/":
+                    if(secondNbr == 0){
+                        secondNbr = 1;
+                    }
                     res = firstNbr / secondNbr;
                     break;
             }
@@ -389,14 +391,17 @@ class Fenetre extends JFrame {
         if(secondString.length()>=1){
             double firstNbr = Double.parseDouble( firstString );
             double secondNbr = Double.parseDouble( secondString );
+            if(secondNbr == 0){
+                secondNbr = 1;
+            }
             double res = firstNbr/secondNbr;
             String resString = Double.toString(res);
-            System.out.println( resString );
             inputs.clear();
             inputs.add(resString);
             inputs.add( clickedOperator );
         }
     }
+
 
     public static void main(String[] args) {
         Fenetre fen = new Fenetre();
