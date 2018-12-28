@@ -2,22 +2,17 @@ package com.elodie.calculatrice;
 
 import com.elodie.calculatrice.model.Calcultatrice;
 import com.elodie.calculatrice.vue.Bouton;
-import org.w3c.dom.NodeList;
 
 import javax.swing.*;
 import javax.swing.border.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Iterator;
+import java.util.Objects;
 
-import static com.sun.org.apache.xalan.internal.lib.ExsltStrings.split;
 import static java.awt.Color.red;
-import static java.lang.Double.parseDouble;
-import static java.util.Date.parse;
 
 /**
  * <b>Fenetre est la classe pour l'affichage de la calculatrice.</b>
@@ -45,29 +40,17 @@ import static java.util.Date.parse;
  */
 
 public class Fenetre extends JFrame {
-    private Calcultatrice calculatrice;
-
-    // Les Panels
-    private JPanel wrapper = new JPanel();           // conteneur Fenetre
-    private JPanel container = new JPanel();         // conteneur calculatrice
-    private JPanel screen = new JPanel();            // conteneur écran d'affichage
-    private JPanel operators = new JPanel();         // conteneur colonne des opérateurs
-    private JPanel operatorsInside = new JPanel();   // conteneur des opérateurs contenu dans operators
-    private JPanel numbers = new JPanel();           // conteneur des boutons chiffres
 
     //Les Layouts
-    GridLayout gridWest = new GridLayout(4, 3, 5, 5); // pour le conteneur numbers
-    GridLayout gridEast = new GridLayout(5, 1, 5, 5); // pour le conteneur operators
+    final GridLayout gridWest = new GridLayout(4, 3, 5, 5); // pour le conteneur numbers
+    final GridLayout gridEast = new GridLayout(5, 1, 5, 5); // pour le conteneur operators
 
     // l'écran d'affichage
-    private JLabel screened;
-    //Les boutons numbers
-    private String [] nbr = {"1", "2", "3", "4", "5", "6", "7", "8", "9", "0", ".", "="};
-    private String [] ops = {"C", "+", "-", "*", "/"};
-    private boolean operatorIsClicked;
+    private final JLabel screened;
+    private final String [] ops = {"C", "+", "-", "*", "/"};
     private String clickedOperator;
     //Ajout d'un tableau pour stocker les entrées utilisateur
-    public ArrayList inputs = new ArrayList();
+    public final ArrayList inputs = new ArrayList();
 
     public Fenetre() {
         //On initialise la JFrame
@@ -76,10 +59,15 @@ public class Fenetre extends JFrame {
         this.setLocationRelativeTo(null);
         this.setResizable(false);
         this.setSize(300, 320);
+        // Les Panels
+        // conteneur Fenetre
+        JPanel wrapper = new JPanel();
         wrapper.setBackground( Color.white );
 
         //Init la calculatrice
         Dimension calcSize = new Dimension(270,270);
+        // conteneur calculatrice
+        JPanel container = new JPanel();
         container.setPreferredSize(calcSize);
         container.setMaximumSize(calcSize);
         container.setPreferredSize(calcSize);
@@ -97,6 +85,8 @@ public class Fenetre extends JFrame {
         screened.setPreferredSize(new Dimension(240, 25) );
         screened.setFont(police);
         screened.setForeground( Color.black );
+        // conteneur écran d'affichage
+        JPanel screen = new JPanel();
         screen.setBackground(Color.white );
         screened.setBorder(BorderFactory.createLineBorder(Color.gray, 1));
         Border screenBorder = screened.getBorder();
@@ -104,18 +94,24 @@ public class Fenetre extends JFrame {
         screened.setBorder( new CompoundBorder( screenBorder, screenMargin) );
         screened.setHorizontalAlignment(JLabel.RIGHT);
         screen.add( screened );
-        container.add(screen, BorderLayout.NORTH);
+        container.add( screen, BorderLayout.NORTH);
 
         //Affichage des chiffres
+        // conteneur des boutons chiffres
+        JPanel numbers = new JPanel();
         numbers.setLayout(gridWest);
+        //Les boutons numbers
+        String[] nbr = {"1", "2", "3", "4", "5", "6", "7", "8", "9", "0", ".", "="};
         for(String s : nbr){
             Bouton bouton = new Bouton(s);
             bouton.addActionListener(new BoutonListener());
             numbers.add(bouton);
         }
-        container.add(numbers);
+        container.add( numbers );
 
         //Affichage des opérateurs sur la droite
+        // conteneur des opérateurs contenu dans operators
+        JPanel operatorsInside = new JPanel();
         operatorsInside.setLayout(gridEast);
         for(String s : ops){
             Bouton bouton = new Bouton(s);
@@ -123,20 +119,22 @@ public class Fenetre extends JFrame {
             Dimension opSize = new Dimension( 50, 35 );
             bouton.setPreferredSize( opSize );
             operatorsInside.add(bouton);
-            if(s == "C"){
+            if(Objects.equals( s, "C" )){
                 bouton.setForeground( red );
             }
         }
-        operators.add(operatorsInside);
+        // conteneur colonne des opérateurs
+        JPanel operators = new JPanel();
+        operators.add( operatorsInside );
 
-        container.add(operators, BorderLayout.EAST);
+        container.add( operators, BorderLayout.EAST);
         wrapper.add( container );
-        this.setContentPane(wrapper);
+        this.setContentPane( wrapper );
         this.setVisible(true);
 
         //On initialise la calculatrice
-        this.calculatrice = new Calcultatrice();
-        this.calculatrice.run();
+        Calcultatrice calculatrice = new Calcultatrice();
+        calculatrice.run();
     }
 
     class BoutonListener implements ActionListener {
@@ -147,7 +145,7 @@ public class Fenetre extends JFrame {
             switch (userInput) {
                 case "C":
                     screened.setText( "0" );
-                    inputs.removeAll( inputs );
+                    inputs.clear();
                     break;
                 case "=":
                     String result = "";
@@ -156,15 +154,13 @@ public class Fenetre extends JFrame {
                     default:
                         inputs.add( userInput );
                         if (Arrays.asList( ops ).contains( userInput )) {
-                            operatorIsClicked = true;
+                            boolean operatorIsClicked = true;
                             clickedOperator = userInput;
                             /**
                              * lire le tableau inputs
                              * trouver l'opérateur et switcher dessus
-                             */
-                            Iterator iterator = inputs.iterator();
-                            while (iterator.hasNext()) {
-                                Object o = iterator.next();
+                             **/
+                            for (Object o : inputs) {
                                 if (Arrays.asList( ops ).contains( o )) {
                                     switch (o.toString()) {
                                         case "+":
@@ -183,59 +179,13 @@ public class Fenetre extends JFrame {
                                 }
                             }
                         }
-
+            }
+            StringBuilder txt = new StringBuilder();
+            for (Object input : inputs) {
+                txt.append( input );
             }
 
-//            }
-//                if (userInput == "C") {
-//                    screened.setText( "0" );
-//                    inputs.removeAll( inputs );
-//                } else if (bouton.getText() == "=") {
-//                    String result = "";
-//                    screened.setText( result );
-//                } else if (userInput != "=") {
-//                    inputs.add( userInput );
-//                    if (Arrays.asList( ops ).contains( userInput )) {
-//                        operatorIsClicked = true;
-//                        clickedOperator = userInput;
-//                        /**
-//                         * lire le tableau inputs
-//                         * trouver l'opérateur et switcher dessus
-//                         */
-//                        Iterator iterator = inputs.iterator();
-//                        while (iterator.hasNext()) {
-//                            Object o = iterator.next();
-//                            if (Arrays.asList( ops ).contains( o )) {
-//                                switch (o.toString()) {
-//                                    case "+":
-//                                        plusOp();
-//                                        break;
-//                                    case "-":
-//                                        minusOp();
-//                                        break;
-//                                    case "*":
-//                                        multiplyOp();
-//                                        break;
-//                                    case "/":
-//                                        divideOp();
-//                                        break;
-//                                    case "C":
-//                                        screened.setText( "" );
-//                                        inputs.clear();
-//                                        break;
-//                                }
-//                            }
-//                        }
-//                    }
-//
-//                }
-
-            String txt = "";
-            for (int i = 0; i < inputs.size(); i++) {
-                txt += inputs.get( i );
-            }
-
-            screened.setText( txt );
+            screened.setText( txt.toString() );
         }
         }
 
@@ -248,7 +198,7 @@ public class Fenetre extends JFrame {
         return sb.substring( 0, sb.length());
     }
     public  void plusOp(){
-        String [] nbrACalculer = inputs.toString().split("[+]");
+        String [] nbrACalculer = inputs.toString().split("[+]|-|[*]|/");
         String firstString = myTrimString(nbrACalculer[0], "");
         String secondString = myTrimString(nbrACalculer[1], "");
         if(secondString.length()>=1){
@@ -270,7 +220,7 @@ public class Fenetre extends JFrame {
         }
     }
     public  void minusOp(){
-        String [] nbrACalculer = inputs.toString().split("[-]");
+        String [] nbrACalculer = inputs.toString().split("[+]|-|[*]|/");
         String firstString = myTrimString(nbrACalculer[0], "");
         String secondString = myTrimString(nbrACalculer[1], "");
 
@@ -297,7 +247,7 @@ public class Fenetre extends JFrame {
         }
     }
     public  void multiplyOp(){
-        String [] nbrACalculer = inputs.toString().split("[*]");
+        String [] nbrACalculer = inputs.toString().split("[+]|-|[*]|/");
         String firstString = myTrimString(nbrACalculer[0], "");
         String secondString = myTrimString(nbrACalculer[1], "");
 
@@ -323,7 +273,7 @@ public class Fenetre extends JFrame {
             System.out.println( inputs.toString() );
         }
     }    public  void divideOp(){
-        String [] nbrACalculer = inputs.toString().split("[/]");
+        String [] nbrACalculer = inputs.toString().split("[+]|-|[*]|/");
         String firstString = myTrimString(nbrACalculer[0], "");
         String secondString = myTrimString(nbrACalculer[1], "");
 

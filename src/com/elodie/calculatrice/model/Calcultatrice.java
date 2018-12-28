@@ -1,8 +1,7 @@
 package com.elodie.calculatrice.model;
-import com.elodie.calculatrice.vue.Bouton;
 
-import javax.swing.*;
 import java.util.ArrayList;
+import java.util.Objects;
 
 public class Calcultatrice {
     private double result;
@@ -16,11 +15,11 @@ public class Calcultatrice {
 
     public void run(){
 
-                if (btn == "C"){
+                if (Objects.equals( btn, "C" )){
                     output="";
                     inputs.removeAll(inputs);
                 }
-                else if(btn == "="){
+                else if(Objects.equals( btn, "=" )){
                     output=Double.toString(result);
                 }
                 else{
