@@ -44,13 +44,15 @@ class Fenetre extends JFrame {
      *liste de nombres, virgule ou signe égal
      *le nom du bouton activé par l'utilisateur
      * une liste contenant les entrées utilisateurs
+     * un chiffre représentant le nombre de fois qu'un opérateur est cliqué à la suite
      */
     private final JLabel screened;
     private final String [] ops = {"C", "+", "-", "*", "/"};
     private final String[] nbr = {"1", "2", "3", "4", "5", "6", "7", "8", "9", "0", ".", "="};
     private String clickedOperator;
     //Ajout d'un tableau pour stocker les entrées utilisateur
-    private final ArrayList inputs = new ArrayList();
+    private  ArrayList inputs = new ArrayList();
+    private  int clicked = 0;
     /**
      * On forme l'affichage de la calculatrice:
      * On initialise la fenêtre, le panneau d'affichage, les divers composants de la calculatrice
@@ -162,23 +164,41 @@ class Fenetre extends JFrame {
          * <li>Lorsqu'on appuie sur "=":
          *     <p>
          *         La fonction equalOp() se déclenche:
-         *         L'opération est effectuée et l'écran d'affichage renvoi le résultat de celle-ci
+         *      <p>L'opération est effectuée et l'écran d'affichage renvoi le résultat de celle-ci
          *         </p>
          *@see Fenetre#equalOp()
          * </li>
          * <li>Lorsqu'on appuie sur toute autre touche de la calcultatrice:
-         *     <p>
-         *         Les entrées utlisateurs sont affichées à l'écran.
-         *         Lorsqu'une opération est faisable suite au déclenchement d'un opérateur, le résultat de celle-ci s'affiche à l'écran,
-         *         la liste des entrées utilisateurs est remplacée par ce résultat.
-         *     </p>
+         *     <p>Les entrées utlisateurs sont affichées à l'écran.
+         *     <p>Si un opérateur est entré à la suite d'un autre, le dernier le remplace.</p>
+         * @see Fenetre#operatorCheck()
+         *      <p>Lorsqu'une opération est faisable suite au déclenchement d'un opérateur, le résultat de celle-ci s'affiche à l'écran,
+         *         la liste des entrées utilisateurs est remplacée par ce résultat.</p>
          * @see Fenetre#clickedOperator
          * @see Fenetre#plusOp()
          * @see Fenetre#minusOp()
          * @see Fenetre#multiplyOp()
          * @see Fenetre#divideOp()
+         *     TODO après opérateur égal, si chiffre saisi, remplacer affichage par chiffre saisi
+         *      <p>Après une opération effectuée suite à "=", on vérifie selon la saisie suivante s'il s'agit d'une nouvelle opération,
+         *      ou s'il s'agit de la même opération qui continue.</p>
+         *      @see Fenetre#newOpOrNot()
          * </li>
          * </ul>
+         * <p>Pour la cosmétique d'affichage:
+         * <ul>
+         *
+         *     <li>
+         *         TODO enlever le zéro en première position
+         *          Si un zéro est en première position, ne pas l'afficher (exemple: 034, doit apparaîre 34)
+         *          @see Fenetre#firstZero()
+         *     </li>
+         *     <li>
+         *         TODO enlever éventuellement le ".0" quand chiffre entier
+         *          Si un .0 est affiché lorsqu'il s'agit d'unn nombr entier, ne pas l'afficher (exemple: 34.0, doit apparaîre 34)
+         *          @see Fenetre#doubleEntier()
+         *     </li>
+         * </ul></p>
          * @param e bouton cliqué
          */
         public void actionPerformed(ActionEvent e) {
@@ -190,11 +210,13 @@ class Fenetre extends JFrame {
             }
             else if(Objects.equals( userInput, "=" )){
                 equalOp();
+                newOpOrNot();
             }
             else{
                 inputs.add( userInput );
                 if (Arrays.asList( ops ).contains( userInput )) {
                     clickedOperator = userInput;
+                    operatorCheck();
                     for (Object o : inputs) {
                         if (Arrays.asList( ops ).contains( o )) {
                             switch (o.toString()) {
@@ -214,12 +236,12 @@ class Fenetre extends JFrame {
                         }
                     }
                 }
+
             }
             StringBuilder txt = new StringBuilder();
             for (Object input : inputs) {
                 txt.append( input );
             }
-
             screened.setText( txt.toString() );
         }
     }
@@ -235,6 +257,30 @@ class Fenetre extends JFrame {
         sb.append(str.replaceAll("[\\[\\],]", "").replace( " ", "" ));
         str.trim();
         return sb.substring( 0, sb.length());
+    }
+
+    /**
+     * Méthode vérifie qu'il n'y a pas double saisie d'opérateur.
+     * Si on clique sur un opérateur à la suite d'un opérateur,
+     * le dernier saisi est pris en compte.
+     */
+
+    //TODO ne pas splitter l'opérateur si opérateur en première position
+    public void operatorCheck() {
+        String trimmed = myTrimString( inputs.toString() );
+        String[] findLastOperator = trimmed.split( "[0-9.]" );
+        int findLastOperatorLenght = findLastOperator.length;
+        String lastOperator1 = findLastOperator[findLastOperatorLenght-1];
+        if (lastOperator1.length() > 1) {
+            int sLenght = lastOperator1.length();
+            String lastOp = lastOperator1.substring( sLenght - 1 );
+            clickedOperator = lastOp;
+            String [] nbrACalculer = inputs.toString().split("[+]|-|[*]|/");
+            String firstString = myTrimString(nbrACalculer[0]);
+            inputs.clear();
+            inputs.add(firstString);
+            inputs.add( clickedOperator );
+        }
     }
 
     /**
@@ -257,15 +303,15 @@ class Fenetre extends JFrame {
      * </ul>
      */
     private void equalOp() {
-        String lastTrim = myTrimString( inputs.toString());
-        String[] findLastOperator = lastTrim.split( "[0-9.]" );
+        String trimmed = myTrimString( inputs.toString());
+        String[] findLastOperator = trimmed.split( "[0-9.]" );
         String lastOperator ="";
         for(String s : findLastOperator){
             if(Arrays.asList( ops ).contains( s )){
                 lastOperator = s;
             }
         }
-        String [] nbrACalculer = lastTrim.split("[+]|-|[*]|/");
+        String [] nbrACalculer = trimmed.split("[+]|-|[*]|/");
         String firstString = myTrimString(nbrACalculer[0]);
         String secondString = myTrimString(nbrACalculer[1]);
         double firstNbr = Double.parseDouble( firstString );
@@ -296,6 +342,17 @@ class Fenetre extends JFrame {
     }
 
     /**
+     * Après le calcul d'une opération effectuée suite au déclenchement de l'opérateur "=",
+     * vérifie si le bouton déclenché suivant est un chiffre ou un opérateur.
+     * Si c'est un opérateur, comportement normal;
+     * Si c'est un chiffre, on commence alors une nouvelle opération:
+     * L'écran d'affichage se met à jour et affiche le nouveau chiffre à calculer.
+     */
+    public void newOpOrNot(){
+
+    }
+
+    /**
      * Opération suite à l'enclenchement du bouton "+" plus
      * On récupère la liste des entrées utilisateurs qu'on divise en deux en utilisant un opérateur comme délimiteur
      *     <ul>
@@ -318,7 +375,6 @@ class Fenetre extends JFrame {
             inputs.clear();
             inputs.add(resString);
             inputs.add( clickedOperator );
-
         }
     }
 

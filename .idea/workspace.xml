@@ -2,10 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="719f3605-9a69-4669-a9e2-5090e7a2bdfd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Méthodes/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Méthodes/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Méthodes/Méthodes.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Méthodes/src/indexation/indexation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Méthodes/src/occurenceCounter/occurenceCounter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/Fenetre$BoutonListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/Fenetre$BoutonListener.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/Fenetre.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/Fenetre.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/elodie/calculatrice/Fenetre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/Fenetre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/elodie/calculatrice/model/Calcultatrice.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/elodie/calculatrice/oberserver/Observable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/elodie/calculatrice/oberserver/Observateur.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/elodie/calculatrice/vue/Bouton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/vue/Bouton.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,11 +29,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/elodie/calculatrice/Fenetre.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="394" column="30" lean-forward="true" selection-start-line="394" selection-start-column="30" selection-end-line="394" selection-end-column="30" />
+            <state relative-caret-position="273">
+              <caret line="284" column="4" selection-start-line="284" selection-start-column="4" selection-end-line="284" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#16781#16782#0" expanded="true" />
+                <element signature="e#19517#19518#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -38,6 +48,18 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>trouve_lettre</find>
+      <find>dernier_index</find>
+      <find>str2</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>occurs</replace>
+      <replace>lastIndex</replace>
+      <replace>str</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -70,42 +92,10 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Calcultrice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Calcultrice" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Calcultrice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Calcultrice" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Calcultrice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Calcultrice" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="calculatrice" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Calcultrice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Calcultrice" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="calculatrice" type="462c0819:PsiDirectoryNode" />
-              <item name="vue" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546012386102" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546076822785" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RunDashboard">
@@ -217,8 +207,24 @@
       <option name="project" value="LOCAL" />
       <updated>1546011192694</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="division par zéro retourne une division par un">
+      <created>1546012427708</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1546012427708</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
+  </component>
+  <component name="TodoView" selected-index="1">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -237,7 +243,7 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3289689" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3289689" />
@@ -265,7 +271,8 @@
     <MESSAGE value="ajout de la fonction &quot;=&quot; equalOp" />
     <MESSAGE value="modification de la fonction equalOp, bug réparé" />
     <MESSAGE value="ajout de la javadoc" />
-    <option name="LAST_COMMIT_MESSAGE" value="ajout de la javadoc" />
+    <MESSAGE value="division par zéro retourne une division par un" />
+    <option name="LAST_COMMIT_MESSAGE" value="division par zéro retourne une division par un" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/elodie/calculatrice/oberserver/Observable.java" />
@@ -286,23 +293,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/elodie/calculatrice/model/Calcultatrice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/elodie/calculatrice/model/Calcultatrice.java" />
     <entry file="file://$PROJECT_DIR$/src/com/elodie/calculatrice/Fenetre.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="394" column="30" lean-forward="true" selection-start-line="394" selection-start-column="30" selection-end-line="394" selection-end-column="30" />
+        <state relative-caret-position="273">
+          <caret line="284" column="4" selection-start-line="284" selection-start-column="4" selection-end-line="284" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#16781#16782#0" expanded="true" />
+            <element signature="e#19517#19518#0" expanded="true" />
           </folding>
         </state>
       </provider>
