@@ -1,21 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="719f3605-9a69-4669-a9e2-5090e7a2bdfd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Méthodes/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Méthodes/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Méthodes/Méthodes.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Méthodes/src/indexation/indexation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Méthodes/src/occurenceCounter/occurenceCounter.java" afterDir="false" />
+    <list default="true" id="719f3605-9a69-4669-a9e2-5090e7a2bdfd" name="Default Changelist" comment="la saisie multiple d'opérateurs renvoi le dernier opérateur saisi">
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/Fenetre$BoutonListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/Fenetre$BoutonListener.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/Fenetre.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/Fenetre.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/elodie/calculatrice/Fenetre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/Fenetre.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/elodie/calculatrice/model/Calcultatrice.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/elodie/calculatrice/oberserver/Observable.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/elodie/calculatrice/oberserver/Observateur.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/elodie/calculatrice/vue/Bouton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/vue/Bouton.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,11 +20,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/elodie/calculatrice/Fenetre.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="284" column="4" selection-start-line="284" selection-start-column="4" selection-end-line="284" selection-end-column="4" />
+            <state relative-caret-position="388">
+              <caret line="225" column="42" lean-forward="true" selection-start-line="225" selection-start-column="42" selection-end-line="225" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#19517#19518#0" expanded="true" />
+                <element signature="e#19745#19746#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -54,6 +45,7 @@
       <find>trouve_lettre</find>
       <find>dernier_index</find>
       <find>str2</find>
+      <find>inputs</find>
     </findStrings>
     <replaceStrings>
       <replace>occurs</replace>
@@ -95,8 +87,9 @@
     <panes />
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546076822785" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546243713877" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -214,7 +207,14 @@
       <option name="project" value="LOCAL" />
       <updated>1546012427708</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="la saisie multiple d'opérateurs renvoi le dernier opérateur saisi">
+      <created>1546078796567</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1546078796567</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TodoView" selected-index="1">
@@ -243,9 +243,9 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3289689" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49924356" weight="0.3289689" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50075644" side_tool="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3289689" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3289689" />
       <window_info anchor="bottom" id="Inspection Results" order="11" weight="0.3289689" />
@@ -260,7 +260,46 @@
       <window_info anchor="right" id="UML design tool window" order="8" />
     </layout>
   </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/.." />
+    </ignored-roots>
     <MESSAGE value="affichage de la calculatrice" />
     <MESSAGE value="ajout version 1.0" />
     <MESSAGE value="ajout de la méthode interne BoutonListener dans la Classe Fenetre / ajout des appels addBoutonListener aux boutons / ajout de la condition effacer texte si le bouton &quot;C&quot; est cliqué" />
@@ -272,7 +311,8 @@
     <MESSAGE value="modification de la fonction equalOp, bug réparé" />
     <MESSAGE value="ajout de la javadoc" />
     <MESSAGE value="division par zéro retourne une division par un" />
-    <option name="LAST_COMMIT_MESSAGE" value="division par zéro retourne une division par un" />
+    <MESSAGE value="la saisie multiple d'opérateurs renvoi le dernier opérateur saisi" />
+    <option name="LAST_COMMIT_MESSAGE" value="la saisie multiple d'opérateurs renvoi le dernier opérateur saisi" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/elodie/calculatrice/oberserver/Observable.java" />
@@ -296,11 +336,11 @@
     <entry file="file://$PROJECT_DIR$/src/com/elodie/calculatrice/model/Calcultatrice.java" />
     <entry file="file://$PROJECT_DIR$/src/com/elodie/calculatrice/Fenetre.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="284" column="4" selection-start-line="284" selection-start-column="4" selection-end-line="284" selection-end-column="4" />
+        <state relative-caret-position="388">
+          <caret line="225" column="42" lean-forward="true" selection-start-line="225" selection-start-column="42" selection-end-line="225" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#19517#19518#0" expanded="true" />
+            <element signature="e#19745#19746#0" expanded="true" />
           </folding>
         </state>
       </provider>

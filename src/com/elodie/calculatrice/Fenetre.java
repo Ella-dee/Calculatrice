@@ -9,7 +9,6 @@ import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Objects;
-
 import static java.awt.Color.red;
 
 /**
@@ -204,10 +203,12 @@ class Fenetre extends JFrame {
         public void actionPerformed(ActionEvent e) {
             Bouton bouton = (Bouton) e.getSource();
             String userInput = bouton.getText();
+            // si on appuie sur Cancel "C" on vide l'affichage et la liste des entrées utilisateurs
             if (Objects.equals( userInput, "C" )) {
                 inputs.clear();
                 inputs.add("0");
             }
+            // si on appuie sur égal "=" on effectue l'opération affichée
             else if(Objects.equals( userInput, "=" )){
                 equalOp();
                 newOpOrNot();
@@ -259,6 +260,12 @@ class Fenetre extends JFrame {
         return sb.substring( 0, sb.length());
     }
 
+    public void firstZero(){
+
+    }
+    public void doubleEntier(){
+
+    }
     /**
      * Méthode vérifie qu'il n'y a pas double saisie d'opérateur.
      * Si on clique sur un opérateur à la suite d'un opérateur,
