@@ -296,49 +296,33 @@ class Fenetre extends JFrame {
      * le dernier saisi est pris en compte.
      */
     public void operatorCheck() {
-        //On récupère les entrées utilisateurs sous forme de chaîne de caractère
-        String trimmed = myTrimString( inputs.toString() );
-        //Sur la chaîne initiale, on récupère les chiffres saisis avant l'opérateur comme étant un seul nombre
-        String[] nbrACalculer = trimmed.split( "[+]|-|[*]|/" );
-        //Sur la chaîne initiale, on enlève les chiffres et le point situés avant le premier opérateur trouvé
-        String[] findOperator = trimmed.split( "[0-9.]" );
-        //On récupère sa longueur
-        int findOperatorLenght = findOperator.length;
-        //length-1 est égal au dernier caractère soit l'opérateur recherché
-        String lastOperator = findOperator[findOperatorLenght-1];
+        String trimmed = myTrimString( inputs.toString() ); //On récupère les entrées utilisateurs sous forme de chaîne de caractère
+        String[] nbrACalculer = trimmed.split( "[+]|-|[*]|/" ); //Sur la chaîne initiale, on récupère les chiffres saisis avant l'opérateur comme étant un seul nombre
+        String[] findOperator = trimmed.split( "[0-9.]" ); //Sur la chaîne initiale, on enlève les chiffres et le point situés avant le premier opérateur trouvé
+        int findOperatorLenght = findOperator.length; //On récupère sa longueur
+        String lastOperator = findOperator[findOperatorLenght-1]; //length-1 est égal au dernier caractère soit l'opérateur recherché
 
-        //Si length>1, il y a plusieurs opérateurs de saisis. On réupère le dernier pour qu'il soit pris en compte
-        if (lastOperator.length() > 1) {
+        if (lastOperator.length() > 1) {  //Si length>1, il y a plusieurs opérateurs de saisis.
             int sLenght = lastOperator.length();
-            //On trouve le dernier opérateur saisi
-            String lastOp = lastOperator.substring( sLenght - 1 );
-            //On le défini comme nouvel opérateur à prendre en compte
-            clickedOperator = lastOp;
+            String lastOp = lastOperator.substring( sLenght - 1 ); //On trouve le dernier opérateur saisi
+            clickedOperator = lastOp; //On le défini comme nouvel opérateur à prendre en compte
 
-            //Si le nombre est positif
-            if(negativeNbrCheck( trimmed, "-" )== false){
-                //On récupère le nombre à calculer (tout ce qui est chiffre ou point avant le premier opérateur)
-                String firstString = nbrACalculer[0];
+            if(negativeNbrCheck( trimmed, "-" )== false){ //Si le nombre est positif
+                String firstString = nbrACalculer[0]; //On récupère le nombre à calculer (tout ce qui est chiffre ou point avant le premier opérateur)
                 inputs.clear();
-                //La liste des entrées utilisateurs contient maintenant le nombre à calculer suivi de son opérateur
-                inputs.add(firstString);
+                inputs.add(firstString); //La liste des entrées utilisateurs contient maintenant le nombre à calculer suivi de son opérateur
                 inputs.add( clickedOperator );
             }
         }
 
-        //Si le nombre est négatif
-        if(negativeNbrCheck( trimmed, "-")==true ){
-            //on récupère ce nombre (ce qui est chiffre ou point après le premier caractère mais avant tout autre opérateur)
-            String negString = nbrACalculer[1];
+        if(negativeNbrCheck( trimmed, "-")==true ){ //Si le nombre est négatif
+            String negString = nbrACalculer[1];  //on récupère ce nombre (ce qui est chiffre ou point après le premier caractère mais avant tout autre opérateur)
             String minusS = "-";
-            // puis lui ajoute le signe "-"
-            negString = minusS.concat( negString );
+            negString = minusS.concat( negString ); // puis lui ajoute le signe "-"
             inputs.clear();
-            // puis on le ré-injecte dans la liste des entrées utilisateurs
-            inputs.add( negString );
+            inputs.add( negString ); // puis on le ré-injecte dans la liste des entrées utilisateurs
             inputs.add( clickedOperator );
         }
-
     }
     /**
      * Opération suite à l'enclenchement du bouton "=" égal
