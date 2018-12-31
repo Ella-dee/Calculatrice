@@ -260,36 +260,86 @@ class Fenetre extends JFrame {
         return sb.substring( 0, sb.length());
     }
 
+    /**
+     * Si un zéro est en première position, ne pas l'afficher ( 034 = 34)
+     */
     public void firstZero(){
 
     }
+
+    /**
+     * Si un .0 est affiché lorsqu'il s'agit d'un nombre entier, le supprimer (34.0 = 34)
+     */
     public void doubleEntier(){
 
     }
+
+    //TODO ne pas splitter l'opérateur si opérateur en première position
+
+    /**
+     * Vérifier si le premier nombre apparant esr un négatif.
+     * Si c'est le cas il ne faut pas prendre le "-" du négatif comme un "-" opérateur,
+     * et ne pas splitter la chaîne de caractère
+     */
+    public static boolean negativeNbrCheck(String str, String minus){
+        boolean negative = false;
+        if(str.indexOf(minus) == 0){
+            negative = true;
+        }
+        else negative = false;
+        return negative;
+    }
+
     /**
      * Méthode vérifie qu'il n'y a pas double saisie d'opérateur.
      * Si on clique sur un opérateur à la suite d'un opérateur,
      * le dernier saisi est pris en compte.
      */
-
-    //TODO ne pas splitter l'opérateur si opérateur en première position
     public void operatorCheck() {
+        //On récupère les entrées utilisateurs sous forme de chaîne de caractère
         String trimmed = myTrimString( inputs.toString() );
-        String[] findLastOperator = trimmed.split( "[0-9.]" );
-        int findLastOperatorLenght = findLastOperator.length;
-        String lastOperator1 = findLastOperator[findLastOperatorLenght-1];
-        if (lastOperator1.length() > 1) {
-            int sLenght = lastOperator1.length();
-            String lastOp = lastOperator1.substring( sLenght - 1 );
+        //Sur la chaîne initiale, on récupère les chiffres saisis avant l'opérateur comme étant un seul nombre
+        String[] nbrACalculer = trimmed.split( "[+]|-|[*]|/" );
+        //Sur la chaîne initiale, on enlève les chiffres et le point situés avant le premier opérateur trouvé
+        String[] findOperator = trimmed.split( "[0-9.]" );
+        //On récupère sa longueur
+        int findOperatorLenght = findOperator.length;
+        //length-1 est égal au dernier caractère soit l'opérateur recherché
+        String lastOperator = findOperator[findOperatorLenght-1];
+
+        //Si length>1, il y a plusieurs opérateurs de saisis. On réupère le dernier pour qu'il soit pris en compte
+        if (lastOperator.length() > 1) {
+            int sLenght = lastOperator.length();
+            //On trouve le dernier opérateur saisi
+            String lastOp = lastOperator.substring( sLenght - 1 );
+            //On le défini comme nouvel opérateur à prendre en compte
             clickedOperator = lastOp;
-            String [] nbrACalculer = inputs.toString().split("[+]|-|[*]|/");
-            String firstString = myTrimString(nbrACalculer[0]);
+
+            //Si le nombre est positif
+            if(negativeNbrCheck( trimmed, "-" )== false){
+                //On récupère le nombre à calculer (tout ce qui est chiffre ou point avant le premier opérateur)
+                String firstString = nbrACalculer[0];
+                inputs.clear();
+                //La liste des entrées utilisateurs contient maintenant le nombre à calculer suivi de son opérateur
+                inputs.add(firstString);
+                inputs.add( clickedOperator );
+            }
+        }
+
+        //Si le nombre est négatif
+        if(negativeNbrCheck( trimmed, "-")==true ){
+            //on récupère ce nombre (ce qui est chiffre ou point après le premier caractère mais avant tout autre opérateur)
+            String negString = nbrACalculer[1];
+            String minusS = "-";
+            // puis lui ajoute le signe "-"
+            negString = minusS.concat( negString );
             inputs.clear();
-            inputs.add(firstString);
+            // puis on le ré-injecte dans la liste des entrées utilisateurs
+            inputs.add( negString );
             inputs.add( clickedOperator );
         }
-    }
 
+    }
     /**
      * Opération suite à l'enclenchement du bouton "=" égal
      * On récupère la liste des entrées utilisateurs
