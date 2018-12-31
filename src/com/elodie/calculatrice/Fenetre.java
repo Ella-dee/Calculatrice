@@ -219,8 +219,7 @@ class Fenetre extends JFrame {
                     clickedOperator = userInput;
                     operatorCheck();
                     for (Object o : inputs) {
-                        if ((Arrays.asList( ops ).contains( o ))&&(inputs.indexOf(o)>1)) { // Si un caractère de la liste inputs se trouve dans la liste des opérateurs
-                            // ET  o > index 1 dans liste inputs
+                        if ((Arrays.asList( ops ).contains( o ))&& inputs.indexOf( o )!=0) {
                             switch (o.toString()) {
                                 case "+":
                                     plusOp();
@@ -275,15 +274,14 @@ class Fenetre extends JFrame {
 
     }
 
-    //TODO ne pas splitter l'opérateur si opérateur en première position
-
+    //TODO première addition avec un nombr négatif ne fonctionne pas!!!!
     /**
      * Vérifier si le premier nombre apparant esr un négatif.
      * Si c'est le cas il ne faut pas prendre le "-" du négatif comme un "-" opérateur,
      * et ne pas splitter la chaîne de caractère
      */
     public static boolean negativeNbrCheck(String str, String minus){
-        boolean negative = false;
+        boolean negative;
         if(str.indexOf(minus) == 0){
             negative = true;
         }
@@ -298,7 +296,6 @@ class Fenetre extends JFrame {
      */
     public void operatorCheck() {
         String trimmed = myTrimString( inputs.toString() ); //On récupère les entrées utilisateurs sous forme de chaîne de caractère
-        String[] nbrACalculer = trimmed.split( "[+]|-|[*]|/" ); //Sur la chaîne initiale, on récupère les chiffres saisis avant l'opérateur comme étant un seul nombre
         String[] findOperator = trimmed.split( "[0-9.]" ); //Sur la chaîne initiale, on enlève les chiffres et le point situés avant le premier opérateur trouvé
         int findOperatorLenght = findOperator.length; //On récupère sa longueur
         String lastOperator = findOperator[findOperatorLenght-1]; //length-1 est égal au dernier caractère soit l'opérateur recherché
@@ -307,24 +304,12 @@ class Fenetre extends JFrame {
             int sLenght = lastOperator.length();
             String lastOp = lastOperator.substring( sLenght - 1 ); //On trouve le dernier opérateur saisi
             clickedOperator = lastOp; //On le défini comme nouvel opérateur à prendre en compte
-
-            if(negativeNbrCheck( trimmed, "-" )== false){ //Si le nombre est positif
-                String firstString = nbrACalculer[0]; //On récupère le nombre à calculer (tout ce qui est chiffre ou point avant le premier opérateur)
-                inputs.clear();
-                inputs.add(firstString); //La liste des entrées utilisateurs contient maintenant le nombre à calculer suivi de son opérateur
-                inputs.add( clickedOperator );
-            }
-
-            else if(negativeNbrCheck( trimmed, "-")==true ){ //Si le nombre est négatif
-                String negString = nbrACalculer[1];  //on récupère ce nombre (ce qui est chiffre ou point après le premier caractère mais avant tout autre opérateur)
-                String minusS = "-";
-                negString = minusS.concat( negString ); // puis lui ajoute le signe "-"
-                inputs.clear();
-                inputs.add( negString ); // puis on le ré-injecte dans la liste des entrées utilisateurs
-                inputs.add( clickedOperator );
-            }
-        }
+            double firstNumber = findFirstNumber();
+            inputs.clear();
+            inputs.add( firstNumber);
+            inputs.add( clickedOperator );}
     }
+
     /**
      * Opération suite à l'enclenchement du bouton "=" égal
      * On récupère la liste des entrées utilisateurs
@@ -346,48 +331,36 @@ class Fenetre extends JFrame {
      */
     private void equalOp() {
         String trimmed = myTrimString( inputs.toString());
+        Double firstNbr = findFirstNumber();
+        Double secondNbr = findSecondNumber();
+        double result = 0;
+
         String[] findLastOperator = trimmed.split( "[0-9.]" );
         String lastOperator ="";
-        String [] nbrACalculer = trimmed.split("[+]|-|[*]|/");
-        String firstString = "";
-        String secondString = "";
         for(String s : findLastOperator){
             if(Arrays.asList( ops ).contains( s )){
                 lastOperator = s;
             }
         }
-        if(negativeNbrCheck( trimmed, "-" )== false) {
-            firstString = nbrACalculer[0];
-            secondString = nbrACalculer[1];
-        } else if(negativeNbrCheck( trimmed, "-")==true ) {
-            String negString = nbrACalculer[1];
-            String minusS = "-";
-            firstString = minusS.concat( negString );
-            secondString = nbrACalculer[2];
-        }
-        double firstNbr = Double.parseDouble( firstString );
-        double secondNbr = Double.parseDouble( secondString );
-        double res = 0;
         switch (lastOperator) {
             case "+":
-                res = firstNbr + secondNbr;
+                result = firstNbr + secondNbr;
                 break;
             case "-":
-                res = firstNbr - secondNbr;
+                result = firstNbr - secondNbr;
                 break;
             case "*":
-                res = firstNbr * secondNbr;
+                result = firstNbr * secondNbr;
                 break;
             case "/":
                 if(secondNbr == 0){
-                    secondNbr = 1;
+                    secondNbr = 1.0;
                 }
-                res = firstNbr / secondNbr;
+                result = firstNbr / secondNbr;
                 break;
         }
-        String resString = Double.toString(res);
         inputs.clear();
-        inputs.add(resString);
+        inputs.add(result);
     }
 
     /**
@@ -401,6 +374,33 @@ class Fenetre extends JFrame {
 
     }
 
+    private Double findFirstNumber(){
+        String trimmed = myTrimString( inputs.toString());
+        String [] nbrACalculer = trimmed.split("[+]|-|[*]|/");
+        String firstString = "";
+        if(negativeNbrCheck( trimmed, "-" )== false) {
+            firstString = nbrACalculer[0];
+        }
+        else if(negativeNbrCheck( trimmed, "-")== true ) {
+            String negString = nbrACalculer[1];System.out.println( "nbrACalculer[1] "+nbrACalculer[1] );
+            String minusS = "-";
+            firstString = minusS.concat( negString );System.out.println( "firstString "+firstString );
+        }
+        return Double.parseDouble(firstString);
+    }
+    private Double findSecondNumber(){
+        String trimmed = myTrimString(inputs.toString());
+        String [] nbrACalculer = trimmed.split("[+]|-|[*]|/");
+        String secondString = "";
+        if(negativeNbrCheck( trimmed, "-" )== false) {
+            System.out.println( "nbrACalculer.length "+nbrACalculer.length );
+            secondString = nbrACalculer[1];System.out.println( "nbrACalculer[1] "+nbrACalculer[1] );
+        }
+        else if(negativeNbrCheck( trimmed, "-")==true ) {
+            secondString = nbrACalculer[2];
+        }
+        return Double.parseDouble(secondString);
+    }
     /**
      * Opération suite à l'enclenchement du bouton "+" plus
      * On récupère la liste des entrées utilisateurs qu'on divise en deux en utilisant un opérateur comme délimiteur
@@ -412,18 +412,28 @@ class Fenetre extends JFrame {
      *         <li>on ajoute à la liste des entrées utilisateurs le dernier opérateur saisi</li>
      *     </ul>
      */
-    private void plusOp(){
-        String [] nbrACalculer = inputs.toString().split("[+]|-|[*]|/");
-        String firstString = myTrimString(nbrACalculer[0]);
-        String secondString = myTrimString(nbrACalculer[1]);
-        if(secondString.length()>=1){
-            double firstNbr = Double.parseDouble( firstString );
-            double secondNbr = Double.parseDouble( secondString );
-            double res = firstNbr+secondNbr;
-            String resString = Double.toString(res);
-            inputs.clear();
-            inputs.add(resString);
-            inputs.add( clickedOperator );
+    private void plusOp() {
+        String trimmed = myTrimString( inputs.toString() );
+        String[] nbrACalculer = trimmed.split( "[+]|-|[*]|/" );
+        double firstNbr = findFirstNumber();
+        System.out.println( "firstNbr " + firstNbr );
+        if (negativeNbrCheck( trimmed, "-" ) == false) {
+            if (nbrACalculer.length > 1) {
+                double secondNbr = findSecondNumber();
+                double result = firstNbr + secondNbr;
+                inputs.clear();
+                inputs.add( result );
+                inputs.add( clickedOperator );
+            }
+        } else if (negativeNbrCheck( trimmed, "-" ) == true) {
+            if (nbrACalculer.length > 2) {
+                double secondNbr = findSecondNumber();
+                System.out.println( "secondNbr " + secondNbr );
+                double result = firstNbr + secondNbr;
+                inputs.clear();
+                inputs.add( result );
+                inputs.add( clickedOperator );
+            }
         }
     }
 
