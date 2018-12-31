@@ -219,7 +219,8 @@ class Fenetre extends JFrame {
                     clickedOperator = userInput;
                     operatorCheck();
                     for (Object o : inputs) {
-                        if (Arrays.asList( ops ).contains( o )) {
+                        if ((Arrays.asList( ops ).contains( o ))&&(inputs.indexOf(o)>1)) { // Si un caractère de la liste inputs se trouve dans la liste des opérateurs
+                            // ET  o > index 1 dans liste inputs
                             switch (o.toString()) {
                                 case "+":
                                     plusOp();
@@ -292,7 +293,7 @@ class Fenetre extends JFrame {
 
     /**
      * Méthode vérifie qu'il n'y a pas double saisie d'opérateur.
-     * Si on clique sur un opérateur à la suite d'un opérateur,
+     * Si on clique sur un opérateur à la suite d'un autre,
      * le dernier saisi est pris en compte.
      */
     public void operatorCheck() {
@@ -302,7 +303,7 @@ class Fenetre extends JFrame {
         int findOperatorLenght = findOperator.length; //On récupère sa longueur
         String lastOperator = findOperator[findOperatorLenght-1]; //length-1 est égal au dernier caractère soit l'opérateur recherché
 
-        if (lastOperator.length() > 1) {  //Si length>1, il y a plusieurs opérateurs de saisis.
+        if (lastOperator.length() > 1) {  //Si length>1, il y a plusieurs opérateurs de saisis à la suite.
             int sLenght = lastOperator.length();
             String lastOp = lastOperator.substring( sLenght - 1 ); //On trouve le dernier opérateur saisi
             clickedOperator = lastOp; //On le défini comme nouvel opérateur à prendre en compte
@@ -313,15 +314,15 @@ class Fenetre extends JFrame {
                 inputs.add(firstString); //La liste des entrées utilisateurs contient maintenant le nombre à calculer suivi de son opérateur
                 inputs.add( clickedOperator );
             }
-        }
 
-        if(negativeNbrCheck( trimmed, "-")==true ){ //Si le nombre est négatif
-            String negString = nbrACalculer[1];  //on récupère ce nombre (ce qui est chiffre ou point après le premier caractère mais avant tout autre opérateur)
-            String minusS = "-";
-            negString = minusS.concat( negString ); // puis lui ajoute le signe "-"
-            inputs.clear();
-            inputs.add( negString ); // puis on le ré-injecte dans la liste des entrées utilisateurs
-            inputs.add( clickedOperator );
+            else if(negativeNbrCheck( trimmed, "-")==true ){ //Si le nombre est négatif
+                String negString = nbrACalculer[1];  //on récupère ce nombre (ce qui est chiffre ou point après le premier caractère mais avant tout autre opérateur)
+                String minusS = "-";
+                negString = minusS.concat( negString ); // puis lui ajoute le signe "-"
+                inputs.clear();
+                inputs.add( negString ); // puis on le ré-injecte dans la liste des entrées utilisateurs
+                inputs.add( clickedOperator );
+            }
         }
     }
     /**
@@ -347,39 +348,46 @@ class Fenetre extends JFrame {
         String trimmed = myTrimString( inputs.toString());
         String[] findLastOperator = trimmed.split( "[0-9.]" );
         String lastOperator ="";
+        String [] nbrACalculer = trimmed.split("[+]|-|[*]|/");
+        String firstString = "";
+        String secondString = "";
         for(String s : findLastOperator){
             if(Arrays.asList( ops ).contains( s )){
                 lastOperator = s;
             }
         }
-        String [] nbrACalculer = trimmed.split("[+]|-|[*]|/");
-        String firstString = myTrimString(nbrACalculer[0]);
-        String secondString = myTrimString(nbrACalculer[1]);
+        if(negativeNbrCheck( trimmed, "-" )== false) {
+            firstString = nbrACalculer[0];
+            secondString = nbrACalculer[1];
+        } else if(negativeNbrCheck( trimmed, "-")==true ) {
+            String negString = nbrACalculer[1];
+            String minusS = "-";
+            firstString = minusS.concat( negString );
+            secondString = nbrACalculer[2];
+        }
         double firstNbr = Double.parseDouble( firstString );
         double secondNbr = Double.parseDouble( secondString );
         double res = 0;
-        if (Arrays.asList( ops ).contains( lastOperator )) {
-            switch (lastOperator) {
-                case "+":
-                    res = firstNbr + secondNbr;
-                    break;
-                case "-":
-                    res = firstNbr - secondNbr;
-                    break;
-                case "*":
-                    res = firstNbr * secondNbr;
-                    break;
-                case "/":
-                    if(secondNbr == 0){
-                        secondNbr = 1;
-                    }
-                    res = firstNbr / secondNbr;
-                    break;
-            }
-            String resString = Double.toString(res);
-            inputs.clear();
-            inputs.add(resString);
+        switch (lastOperator) {
+            case "+":
+                res = firstNbr + secondNbr;
+                break;
+            case "-":
+                res = firstNbr - secondNbr;
+                break;
+            case "*":
+                res = firstNbr * secondNbr;
+                break;
+            case "/":
+                if(secondNbr == 0){
+                    secondNbr = 1;
+                }
+                res = firstNbr / secondNbr;
+                break;
         }
+        String resString = Double.toString(res);
+        inputs.clear();
+        inputs.add(resString);
     }
 
     /**

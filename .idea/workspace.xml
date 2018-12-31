@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="719f3605-9a69-4669-a9e2-5090e7a2bdfd" name="Default Changelist" comment="la saisie multiple d'opérateurs renvoi le dernier opérateur saisi">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="719f3605-9a69-4669-a9e2-5090e7a2bdfd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/Fenetre$BoutonListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/Fenetre$BoutonListener.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/Fenetre.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/Fenetre.class" afterDir="false" />
@@ -20,11 +19,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/elodie/calculatrice/Fenetre.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="388">
-              <caret line="225" column="42" lean-forward="true" selection-start-line="225" selection-start-column="42" selection-end-line="225" selection-end-column="42" />
+            <state relative-caret-position="529">
+              <caret line="392" column="9" selection-start-line="392" selection-start-column="9" selection-end-line="392" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#19745#19746#0" expanded="true" />
+                <element signature="e#22441#22442#0" expanded="true" />
+                <element signature="e#22484#22485#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -46,6 +46,7 @@
       <find>dernier_index</find>
       <find>str2</find>
       <find>inputs</find>
+      <find>splitOrNot</find>
     </findStrings>
     <replaceStrings>
       <replace>occurs</replace>
@@ -87,7 +88,7 @@
     <panes />
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546243713877" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546251402019" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
@@ -214,7 +215,28 @@
       <option name="project" value="LOCAL" />
       <updated>1546078796567</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="ajout des méthodes (pour l'intant vide= pour les TODO">
+      <created>1546243879006</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1546243879006</updated>
+    </task>
+    <task id="LOCAL-00014" summary="ajout de la condition booléenne negativeCheck(), qui vérifie si le nombre entré est négatif, sur la méthode operatorCheck()">
+      <created>1546249285816</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1546249285816</updated>
+    </task>
+    <task id="LOCAL-00015" summary="ajout de commentaires du code sur la méthode operatorCheck()">
+      <created>1546249543949</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1546249543949</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TodoView" selected-index="1">
@@ -312,7 +334,10 @@
     <MESSAGE value="ajout de la javadoc" />
     <MESSAGE value="division par zéro retourne une division par un" />
     <MESSAGE value="la saisie multiple d'opérateurs renvoi le dernier opérateur saisi" />
-    <option name="LAST_COMMIT_MESSAGE" value="la saisie multiple d'opérateurs renvoi le dernier opérateur saisi" />
+    <MESSAGE value="ajout des méthodes (pour l'intant vide= pour les TODO" />
+    <MESSAGE value="ajout de la condition booléenne negativeCheck(), qui vérifie si le nombre entré est négatif, sur la méthode operatorCheck()" />
+    <MESSAGE value="ajout de commentaires du code sur la méthode operatorCheck()" />
+    <option name="LAST_COMMIT_MESSAGE" value="ajout de commentaires du code sur la méthode operatorCheck()" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/elodie/calculatrice/oberserver/Observable.java" />
@@ -336,11 +361,12 @@
     <entry file="file://$PROJECT_DIR$/src/com/elodie/calculatrice/model/Calcultatrice.java" />
     <entry file="file://$PROJECT_DIR$/src/com/elodie/calculatrice/Fenetre.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="225" column="42" lean-forward="true" selection-start-line="225" selection-start-column="42" selection-end-line="225" selection-end-column="42" />
+        <state relative-caret-position="529">
+          <caret line="392" column="9" selection-start-line="392" selection-start-column="9" selection-end-line="392" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#19745#19746#0" expanded="true" />
+            <element signature="e#22441#22442#0" expanded="true" />
+            <element signature="e#22484#22485#0" expanded="true" />
           </folding>
         </state>
       </provider>
