@@ -213,8 +213,8 @@ class Fenetre extends JFrame {
             }
             else{
                 inputs.add( userInput );
-                newOpOrNot();
                 firstZero();
+                newOpOrNot();
                 if (Arrays.asList( ops ).contains( userInput )) {
                     clickedOperator = userInput;
                     operatorCheck();
@@ -268,10 +268,9 @@ class Fenetre extends JFrame {
         trimmed.append(myTrimString(inputs.toString()));
         if(trimmed.charAt( 0 ) == '0'){
             trimmed = trimmed.deleteCharAt( 0 );
-            System.out.println( "str trimmed before zero "+trimmed );
+            inputs.clear();
+            inputs.add( trimmed );
         }
-        inputs.clear();
-        inputs.add( trimmed );
     }
 
     /**
@@ -352,7 +351,6 @@ class Fenetre extends JFrame {
         Double firstNbr = findFirstNumber();
         Double secondNbr = findSecondNumber();
         double result = 0;
-
         String[] findLastOperator = trimmed.split( "[0-9.]" );
         String lastOperator ="";
         for(String s : findLastOperator){
@@ -378,7 +376,6 @@ class Fenetre extends JFrame {
                 break;
         }
         String str = String.valueOf( result );
-        System.out.println( "str "+str );
         inputs.clear();
         inputs.add(doubleEntier(str));
     }
@@ -394,7 +391,6 @@ class Fenetre extends JFrame {
             String trimmed = myTrimString( inputs.toString());
             int trimmedL = trimmed.length();
             char carAt = trimmed.charAt(trimmedL-1);
-            System.out.println( "carAt: "+carAt );
             for (int i = 0; i<nbr.length;i++) {
                 if (nbr[i].equals( String.valueOf( carAt ))) {//Si c'est un chiffre, on commence alors une nouvelle opération:
                     inputs.clear();
@@ -414,9 +410,9 @@ class Fenetre extends JFrame {
             firstString = nbrACalculer[0];
         }
         else if(negativeNbrCheck( trimmed, "-")== true ) {
-            String negString = nbrACalculer[1];System.out.println( "nbrACalculer[1] "+nbrACalculer[1] );
+            String negString = nbrACalculer[1];
             String minusS = "-";
-            firstString = minusS.concat( negString );System.out.println( "firstString "+firstString );
+            firstString = minusS.concat( negString );
         }
         return Double.parseDouble(firstString);
     }
@@ -425,8 +421,7 @@ class Fenetre extends JFrame {
         String [] nbrACalculer = trimmed.split("[+]|-|[*]|/");
         String secondString = "";
         if(negativeNbrCheck( trimmed, "-" )== false) {
-            System.out.println( "nbrACalculer.length "+nbrACalculer.length );
-            secondString = nbrACalculer[1];System.out.println( "nbrACalculer[1] "+nbrACalculer[1] );
+            secondString = nbrACalculer[1];
         }
         else if(negativeNbrCheck( trimmed, "-")==true ) {
             secondString = nbrACalculer[2];
@@ -448,7 +443,6 @@ class Fenetre extends JFrame {
         String trimmed = myTrimString( inputs.toString() );
         String[] nbrACalculer = trimmed.split( "[+]|-|[*]|/" );
         double firstNbr = findFirstNumber();
-        System.out.println( "firstNbr " + firstNbr );
         if (negativeNbrCheck( trimmed, "-" ) == false) {
             if (nbrACalculer.length > 1) {
                 double secondNbr = findSecondNumber();
@@ -461,7 +455,6 @@ class Fenetre extends JFrame {
         } else if (negativeNbrCheck( trimmed, "-" ) == true) {
             if (nbrACalculer.length > 2) {
                 double secondNbr = findSecondNumber();
-                System.out.println( "secondNbr " + secondNbr );
                 double result = firstNbr + secondNbr;
                 String str = String.valueOf( result );
                 inputs.clear();
