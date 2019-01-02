@@ -188,8 +188,7 @@ class Fenetre extends JFrame {
          * <p>Pour la cosmétique d'affichage:
          * <ul>
          *
-         *     <li>
-         *         TODO enlever le zéro en première position
+         *     <li></li>
          *          Si un zéro est en première position, ne pas l'afficher (exemple: 034, doit apparaîre 34)
          *          @see Fenetre#firstZero()
          *     </li>
@@ -215,6 +214,7 @@ class Fenetre extends JFrame {
             }
             else{
                 inputs.add( userInput );
+                firstZero();
                 if (Arrays.asList( ops ).contains( userInput )) {
                     clickedOperator = userInput;
                     operatorCheck();
@@ -264,7 +264,14 @@ class Fenetre extends JFrame {
      * Si un zéro est en première position, ne pas l'afficher ( 034 = 34)
      */
     public void firstZero(){
-
+        StringBuilder trimmed = new StringBuilder();
+        trimmed.append(myTrimString(inputs.toString()));
+        if(trimmed.charAt( 0 ) == '0'){
+            trimmed = trimmed.deleteCharAt( 0 );
+            System.out.println( "str trimmed before zero "+trimmed );
+        }
+        inputs.clear();
+        inputs.add( trimmed );
     }
 
     /**

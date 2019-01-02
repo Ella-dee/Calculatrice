@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="719f3605-9a69-4669-a9e2-5090e7a2bdfd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/Fenetre$BoutonListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/Fenetre$BoutonListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/Fenetre.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/Fenetre.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/elodie/calculatrice/Fenetre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/Fenetre.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -18,8 +18,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/elodie/calculatrice/Fenetre.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
-              <caret line="197" column="56" selection-start-line="197" selection-start-column="56" selection-end-line="197" selection-end-column="56" />
+            <state relative-caret-position="104">
+              <caret line="268" column="55" selection-start-line="268" selection-start-column="55" selection-end-line="268" selection-end-column="55" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#21959#21960#0" expanded="true" />
@@ -250,7 +250,14 @@
       <option name="project" value="LOCAL" />
       <updated>1546274138993</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="ajout de la fonction doubleEntier(String str), qui vérifie qu'un nombre entier apparaissan avec &quot;.0&quot; apparaisse à l'écran sans virgule (34.0 apparait 34)">
+      <created>1546419052292</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1546419052292</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TodoView" selected-index="1">
@@ -275,11 +282,11 @@
       <window_info content_ui="combo" id="Project" order="6" weight="0.24962178" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3764321" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3764321" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info active="true" anchor="bottom" id="TODO" order="6" sideWeight="0.49924356" visible="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49924356" weight="0.3289689" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50075644" side_tool="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3289689" />
@@ -367,7 +374,8 @@
     <MESSAGE value="ajout de commentaires du code sur la méthode operatorCheck()" />
     <MESSAGE value="ajout de la gestion de nombre négatif dans la fonction equalOp()" />
     <MESSAGE value="ajout de la gestion de nombre négatif dans la fonction plusOp()&#10;//les opérations négatives ne fonctionnent pas lorsqu'elles sont appelées au lancement de la calculatrice" />
-    <option name="LAST_COMMIT_MESSAGE" value="ajout de la gestion de nombre négatif dans la fonction plusOp()&#10;//les opérations négatives ne fonctionnent pas lorsqu'elles sont appelées au lancement de la calculatrice" />
+    <MESSAGE value="ajout de la fonction doubleEntier(String str), qui vérifie qu'un nombre entier apparaissan avec &quot;.0&quot; apparaisse à l'écran sans virgule (34.0 apparait 34)" />
+    <option name="LAST_COMMIT_MESSAGE" value="ajout de la fonction doubleEntier(String str), qui vérifie qu'un nombre entier apparaissan avec &quot;.0&quot; apparaisse à l'écran sans virgule (34.0 apparait 34)" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/elodie/calculatrice/oberserver/Observable.java" />
@@ -391,8 +399,8 @@
     <entry file="file://$PROJECT_DIR$/src/com/elodie/calculatrice/model/Calcultatrice.java" />
     <entry file="file://$PROJECT_DIR$/src/com/elodie/calculatrice/Fenetre.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="197" column="56" selection-start-line="197" selection-start-column="56" selection-end-line="197" selection-end-column="56" />
+        <state relative-caret-position="104">
+          <caret line="268" column="55" selection-start-line="268" selection-start-column="55" selection-end-line="268" selection-end-column="55" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#21959#21960#0" expanded="true" />
