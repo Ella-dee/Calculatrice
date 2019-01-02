@@ -179,7 +179,6 @@ class Fenetre extends JFrame {
          * @see Fenetre#minusOp()
          * @see Fenetre#multiplyOp()
          * @see Fenetre#divideOp()
-         *     TODO après opérateur égal, si chiffre saisi, remplacer affichage par chiffre saisi
          *      <p>Après une opération effectuée suite à "=", on vérifie selon la saisie suivante s'il s'agit d'une nouvelle opération,
          *      ou s'il s'agit de la même opération qui continue.</p>
          *      @see Fenetre#newOpOrNot()
@@ -188,7 +187,7 @@ class Fenetre extends JFrame {
          * <p>Pour la cosmétique d'affichage:
          * <ul>
          *
-         *     <li></li>
+         *     <li>
          *          Si un zéro est en première position, ne pas l'afficher (exemple: 034, doit apparaîre 34)
          *          @see Fenetre#firstZero()
          *     </li>
@@ -209,11 +208,12 @@ class Fenetre extends JFrame {
             }
             // si on appuie sur égal "=" on effectue l'opération affichée
             else if(Objects.equals( userInput, "=" )){
+                clicked = 0;
                 equalOp();
-                newOpOrNot();
             }
             else{
                 inputs.add( userInput );
+                newOpOrNot();
                 firstZero();
                 if (Arrays.asList( ops ).contains( userInput )) {
                     clickedOperator = userInput;
@@ -347,6 +347,7 @@ class Fenetre extends JFrame {
      * </ul>
      */
     private void equalOp() {
+        clicked = 1;
         String trimmed = myTrimString( inputs.toString());
         Double firstNbr = findFirstNumber();
         Double secondNbr = findSecondNumber();
@@ -384,13 +385,25 @@ class Fenetre extends JFrame {
 
     /**
      * Après le calcul d'une opération effectuée suite au déclenchement de l'opérateur "=",
-     * vérifie si le bouton déclenché suivant est un chiffre ou un opérateur.
-     * Si c'est un opérateur, comportement normal;
+     * vérifie si le bouton déclenché suivant est un chiffre.
      * Si c'est un chiffre, on commence alors une nouvelle opération:
      * L'écran d'affichage se met à jour et affiche le nouveau chiffre à calculer.
      */
-    public void newOpOrNot(){
-
+    public void newOpOrNot() {
+        if (clicked == 1) {
+            String trimmed = myTrimString( inputs.toString());
+            int trimmedL = trimmed.length();
+            char carAt = trimmed.charAt(trimmedL-1);
+            System.out.println( "carAt: "+carAt );
+            for (int i = 0; i<nbr.length;i++) {
+                if (nbr[i].equals( String.valueOf( carAt ))) {//Si c'est un chiffre, on commence alors une nouvelle opération:
+                    inputs.clear();
+                    inputs.add(carAt);
+                    clicked = 0;
+                }
+            }
+        }
+        clicked = 0;
     }
 
     private Double findFirstNumber(){
