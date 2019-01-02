@@ -10,6 +10,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Objects;
 import static java.awt.Color.red;
+import static java.lang.Integer.parseInt;
 
 /**
  * <b>Fenetre est la classe pour l'affichage de la calculatrice.</b>
@@ -193,9 +194,8 @@ class Fenetre extends JFrame {
          *          @see Fenetre#firstZero()
          *     </li>
          *     <li>
-         *         TODO enlever éventuellement le ".0" quand chiffre entier
-         *          Si un .0 est affiché lorsqu'il s'agit d'unn nombr entier, ne pas l'afficher (exemple: 34.0, doit apparaîre 34)
-         *          @see Fenetre#doubleEntier()
+         *          Si un .0 est affiché lorsqu'il s'agit d'un nombre entier, ne pas l'afficher (exemple: 34.0, doit apparaîre 34)
+         *          @see Fenetre#doubleEntier(String str)
          *     </li>
          * </ul></p>
          * @param e bouton cliqué
@@ -269,12 +269,22 @@ class Fenetre extends JFrame {
 
     /**
      * Si un .0 est affiché lorsqu'il s'agit d'un nombre entier, le supprimer (34.0 = 34)
+     * @param str le résultat d'une opération parsé en String
+     * @return le double vérifié, coupé ou non de sa virgule selon le cas, sous forme de chaine de carcatères
      */
-    public void doubleEntier(){
-
+    public String doubleEntier(String str){
+        String trimmed = myTrimString(str);
+        String [] nbrAVérifier = trimmed.split("[.]");
+        String beforeDot = myTrimString( nbrAVérifier[0]);
+        String afterDot = myTrimString( nbrAVérifier[1]);
+        double afterDotDouble = Double.parseDouble( afterDot );
+        if(afterDotDouble == 0.0){
+            str = beforeDot;
+        }
+        return str;
     }
 
-    //TODO première addition avec un nombr négatif ne fonctionne pas!!!!
+    //TODO première addition avec un nombre négatif fonctionne uniquement avec l'opérateur "="
     /**
      * Vérifier si le premier nombre apparant esr un négatif.
      * Si c'est le cas il ne faut pas prendre le "-" du négatif comme un "-" opérateur,
@@ -359,8 +369,10 @@ class Fenetre extends JFrame {
                 result = firstNbr / secondNbr;
                 break;
         }
+        String str = String.valueOf( result );
+        System.out.println( "str "+str );
         inputs.clear();
-        inputs.add(result);
+        inputs.add(doubleEntier(str));
     }
 
     /**
@@ -421,8 +433,9 @@ class Fenetre extends JFrame {
             if (nbrACalculer.length > 1) {
                 double secondNbr = findSecondNumber();
                 double result = firstNbr + secondNbr;
+                String str = String.valueOf( result );
                 inputs.clear();
-                inputs.add( result );
+                inputs.add(doubleEntier(str));
                 inputs.add( clickedOperator );
             }
         } else if (negativeNbrCheck( trimmed, "-" ) == true) {
@@ -430,8 +443,9 @@ class Fenetre extends JFrame {
                 double secondNbr = findSecondNumber();
                 System.out.println( "secondNbr " + secondNbr );
                 double result = firstNbr + secondNbr;
+                String str = String.valueOf( result );
                 inputs.clear();
-                inputs.add( result );
+                inputs.add(doubleEntier(str));
                 inputs.add( clickedOperator );
             }
         }
@@ -458,7 +472,7 @@ class Fenetre extends JFrame {
             double res = firstNbr-secondNbr;
             String resString = Double.toString(res);
             inputs.clear();
-            inputs.add(resString);
+            inputs.add(doubleEntier(resString));
             inputs.add( clickedOperator );
         }
     }
@@ -484,7 +498,7 @@ class Fenetre extends JFrame {
             double res = firstNbr*secondNbr;
             String resString = Double.toString(res);
             inputs.clear();
-            inputs.add(resString);
+            inputs.add(doubleEntier(resString));
             inputs.add( clickedOperator );
         }
     }
@@ -512,7 +526,7 @@ class Fenetre extends JFrame {
             double res = firstNbr/secondNbr;
             String resString = Double.toString(res);
             inputs.clear();
-            inputs.add(resString);
+            inputs.add(doubleEntier(resString));
             inputs.add( clickedOperator );
         }
     }
