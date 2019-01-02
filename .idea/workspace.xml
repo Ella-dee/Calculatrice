@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="719f3605-9a69-4669-a9e2-5090e7a2bdfd" name="Default Changelist" comment="">
+    <list default="true" id="719f3605-9a69-4669-a9e2-5090e7a2bdfd" name="Default Changelist" comment="gestion des opération négatives OK: conversion de inpus de ArrayList vers CopyOnWriteArrayList.">
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/elodie/calculatrice/Fenetre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/Fenetre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/Fenetre$BoutonListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/Fenetre$BoutonListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/Fenetre.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/Fenetre.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/elodie/calculatrice/Fenetre.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,11 +21,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/elodie/calculatrice/Fenetre.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="216" column="28" selection-start-line="216" selection-start-column="28" selection-end-line="216" selection-end-column="28" />
+            <state relative-caret-position="214">
+              <caret line="365" column="56" selection-start-line="365" selection-start-column="56" selection-end-line="365" selection-end-column="56" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#24362#24363#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -46,11 +49,13 @@
       <find>splitOrNot</find>
       <find>Syste</find>
       <find>System</find>
+      <find>Fenetre#</find>
     </findStrings>
     <replaceStrings>
       <replace>occurs</replace>
       <replace>lastIndex</replace>
       <replace>str</replace>
+      <replace>Calculs#</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -63,11 +68,12 @@
         <option value="$PROJECT_DIR$/src/com/elodie/calculatrice/Main.java" />
         <option value="$PROJECT_DIR$/src/com/elodie/calculatrice/oberserver/Observable.java" />
         <option value="$PROJECT_DIR$/src/com/elodie/calculatrice/oberserver/Observateur.java" />
-        <option value="$PROJECT_DIR$/src/com/elodie/calculatrice/vue/Main.java" />
-        <option value="$PROJECT_DIR$/src/com/elodie/calculatrice/vue/Fenetre.java" />
         <option value="$PROJECT_DIR$/src/com/elodie/calculatrice/model/TEST.java" />
         <option value="$PROJECT_DIR$/src/com/elodie/calculatrice/model/Calcultatrice.java" />
         <option value="$PROJECT_DIR$/src/com/elodie/calculatrice/vue/Bouton.java" />
+        <option value="$PROJECT_DIR$/src/com/elodie/calculatrice/vue/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/elodie/calculatrice/vue/Fenetre.java" />
+        <option value="$PROJECT_DIR$/src/com/elodie/calculatrice/calcul/Calculs.java" />
         <option value="$PROJECT_DIR$/src/com/elodie/calculatrice/Fenetre.java" />
       </list>
     </option>
@@ -90,12 +96,44 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Calcultrice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Calcultrice" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Calcultrice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Calcultrice" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Calcultrice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Calcultrice" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="calculatrice" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Calcultrice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Calcultrice" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="calculatrice" type="462c0819:PsiDirectoryNode" />
+              <item name="vue" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546274087722" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546448672257" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -109,9 +147,35 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+  <component name="RunManager" selected="Application.Fenetre">
+    <configuration name="Fenetre" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.elodie.calculatrice.Fenetre" />
+      <module name="Calcultrice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.elodie.calculatrice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.elodie.calculatrice.Main" />
+      <module name="Calcultrice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.elodie.calculatrice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.elodie.calculatrice.vue.Fenetre" />
       <module name="Calcultrice" />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
@@ -121,6 +185,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Fenetre" />
+        <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -283,7 +349,14 @@
       <option name="project" value="LOCAL" />
       <updated>1546437446542</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="gestion des opération négatives OK: conversion de inpus de ArrayList vers CopyOnWriteArrayList.">
+      <created>1546440018223</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1546440018223</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TodoView" selected-index="1">
@@ -305,7 +378,7 @@
       <window_info id="Capture Tool" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info id="Structure" order="5" side_tool="true" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="6" weight="0.24962178" />
+      <window_info content_ui="combo" id="Project" order="6" visible="true" weight="0.24962178" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3764321" />
@@ -404,16 +477,45 @@
     <MESSAGE value="ajout de la fonction firstZero(), qui vérifie qu'un nombre entier apparaissant avec &quot;0&quot; en première position (suite à l'appuie du &quot;C&quot; Cancel) apparaisse à l'écran sans le zéro (034 apparait 34)" />
     <MESSAGE value="ajout de la fonction newOpOrNot(), qui vérifie la nouvelle saisie suite au déclenchement de &quot;=&quot;. Si cette saisie est un chiffre, on efface le résultat précédent pour prendre en compte la nouvelle saisie." />
     <MESSAGE value="modification fonction firstzero(), ok. reste gestion des négatif lors de la première opération" />
-    <option name="LAST_COMMIT_MESSAGE" value="modification fonction firstzero(), ok. reste gestion des négatif lors de la première opération" />
+    <MESSAGE value="gestion des opération négatives OK: conversion de inpus de ArrayList vers CopyOnWriteArrayList." />
+    <option name="LAST_COMMIT_MESSAGE" value="gestion des opération négatives OK: conversion de inpus de ArrayList vers CopyOnWriteArrayList." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/elodie/calculatrice/oberserver/Observable.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/elodie/calculatrice/vue/Main.java" />
     <entry file="file://$PROJECT_DIR$/src/com/elodie/calculatrice/oberserver/Observateur.java" />
     <entry file="file://$PROJECT_DIR$/src/com/elodie/calculatrice/model/TEST.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/elodie/calculatrice/model/Calcultatrice.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/elodie/calculatrice/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding>
+            <element signature="e#139#140#0" expanded="true" />
+            <element signature="e#182#183#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/elodie/calculatrice/vue/Fenetre.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-667">
+          <caret line="177" column="87" selection-start-line="177" selection-start-column="87" selection-end-line="177" selection-end-column="87" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/elodie/calculatrice/calcul/Calculs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4301">
+          <caret line="253" column="5" lean-forward="true" selection-start-line="253" selection-start-column="5" selection-end-line="253" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/elodie/calculatrice/vue/Bouton.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
+        <state relative-caret-position="289">
           <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -425,14 +527,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/elodie/calculatrice/model/Calcultatrice.java" />
     <entry file="file://$PROJECT_DIR$/src/com/elodie/calculatrice/Fenetre.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="216" column="28" selection-start-line="216" selection-start-column="28" selection-end-line="216" selection-end-column="28" />
+        <state relative-caret-position="214">
+          <caret line="365" column="56" selection-start-line="365" selection-start-column="56" selection-end-line="365" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#24362#24363#0" expanded="true" />
           </folding>
         </state>
       </provider>
