@@ -7,6 +7,9 @@ import java.util.Arrays;
 import static com.elodie.calculatrice.interactions.BoutonListener.*;
 import static com.elodie.calculatrice.vue.Fenetre.nbr;
 
+/**
+ * <b>Classe contient tous les calculs à effectuer, ainsi que les méthodes de cosmétiques d'affichage</b>
+ */
 public class Calculs {
 
     /**

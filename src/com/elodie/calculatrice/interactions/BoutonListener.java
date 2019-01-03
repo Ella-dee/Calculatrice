@@ -70,7 +70,7 @@ public class BoutonListener implements ActionListener {
          *          Si un .0 est affiché lorsqu'il s'agit d'un nombre entier, ne pas l'afficher (exemple: 34.0, doit apparaîre 34)
          *          @see Calculs#doubleEntier(String str)
          *     </li>
-         * </ul></p>
+         * </ul>
          * @param e bouton cliqué
          */
         public void actionPerformed(ActionEvent e) {

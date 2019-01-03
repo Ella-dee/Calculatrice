@@ -1,1 +1,1 @@
-packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"com.elodie.calculatrice"},{"l":"com.elodie.calculatrice.vue"}]
+packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"com.elodie.calculatrice.interactions"},{"l":"com.elodie.calculatrice.vue"}]
