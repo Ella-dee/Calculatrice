@@ -1,13 +1,143 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Calcultrice:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="719f3605-9a69-4669-a9e2-5090e7a2bdfd" name="Default Changelist" comment="gestion des opération négatives OK: conversion de inpus de ArrayList vers CopyOnWriteArrayList.">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="719f3605-9a69-4669-a9e2-5090e7a2bdfd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/Calcultrice_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/allclasses-index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/allclasses.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/allpackages-index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/com/elodie/calculatrice/Fenetre.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/com/elodie/calculatrice/package-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/com/elodie/calculatrice/package-tree.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/com/elodie/calculatrice/vue/Bouton.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/com/elodie/calculatrice/vue/package-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/com/elodie/calculatrice/vue/package-tree.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/constant-values.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/deprecated-list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/element-list" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/help-doc.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/index-files/index-1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/index-files/index-2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/index-files/index-3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/index-files/index-4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/index-files/index-5.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/index-files/index-6.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/index-files/index-7.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/jquery/external/jquery/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/jquery/images/ui-bg_flat_0_aaaaaa_40x100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/jquery/images/ui-bg_flat_75_ffffff_40x100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/jquery/images/ui-bg_glass_55_fbf9ee_1x400.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/jquery/images/ui-bg_glass_65_ffffff_1x400.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/jquery/images/ui-bg_glass_75_dadada_1x400.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/jquery/images/ui-bg_glass_75_e6e6e6_1x400.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/jquery/images/ui-bg_glass_95_fef1ec_1x400.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/jquery/images/ui-bg_highlight-soft_75_cccccc_1x100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/jquery/images/ui-icons_222222_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/jquery/images/ui-icons_2e83ff_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/jquery/images/ui-icons_454545_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/jquery/images/ui-icons_888888_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/jquery/images/ui-icons_cd0a0a_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/jquery/jquery-3.3.1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/jquery/jquery-migrate-3.0.1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/jquery/jquery-ui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/jquery/jquery-ui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/jquery/jquery-ui.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/jquery/jquery-ui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/jquery/jquery-ui.structure.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/jquery/jquery-ui.structure.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/jquery/jszip-utils/dist/jszip-utils-ie.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/jquery/jszip-utils/dist/jszip-utils-ie.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/jquery/jszip-utils/dist/jszip-utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/jquery/jszip-utils/dist/jszip-utils.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/jquery/jszip/dist/jszip.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/jquery/jszip/dist/jszip.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/member-search-index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/member-search-index.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/overview-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/overview-tree.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/package-search-index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/package-search-index.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/resources/glass.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/resources/x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/search.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/serialized-form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/stylesheet.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/type-search-index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/type-search-index.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/Fenetre.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/allclasses-index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/allclasses.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/allpackages-index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/com/elodie/calculatrice/Fenetre.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/com/elodie/calculatrice/package-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/com/elodie/calculatrice/package-tree.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/com/elodie/calculatrice/vue/Bouton.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/com/elodie/calculatrice/vue/package-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/com/elodie/calculatrice/vue/package-tree.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/constant-values.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/deprecated-list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/element-list" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/help-doc.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/index-files/index-1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/index-files/index-2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/index-files/index-3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/index-files/index-4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/index-files/index-5.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/index-files/index-6.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/index-files/index-7.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/jquery/external/jquery/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/jquery/images/ui-bg_flat_0_aaaaaa_40x100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/jquery/images/ui-bg_flat_75_ffffff_40x100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/jquery/images/ui-bg_glass_55_fbf9ee_1x400.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/jquery/images/ui-bg_glass_65_ffffff_1x400.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/jquery/images/ui-bg_glass_75_dadada_1x400.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/jquery/images/ui-bg_glass_75_e6e6e6_1x400.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/jquery/images/ui-bg_glass_95_fef1ec_1x400.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/jquery/images/ui-bg_highlight-soft_75_cccccc_1x100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/jquery/images/ui-icons_222222_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/jquery/images/ui-icons_2e83ff_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/jquery/images/ui-icons_454545_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/jquery/images/ui-icons_888888_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/jquery/images/ui-icons_cd0a0a_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/jquery/jquery-3.3.1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/jquery/jquery-migrate-3.0.1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/jquery/jquery-ui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/jquery/jquery-ui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/jquery/jquery-ui.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/jquery/jquery-ui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/jquery/jquery-ui.structure.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/jquery/jquery-ui.structure.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/jquery/jszip-utils/dist/jszip-utils-ie.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/jquery/jszip-utils/dist/jszip-utils-ie.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/jquery/jszip-utils/dist/jszip-utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/jquery/jszip-utils/dist/jszip-utils.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/jquery/jszip/dist/jszip.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/jquery/jszip/dist/jszip.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/member-search-index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/member-search-index.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/overview-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/overview-tree.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/package-search-index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/package-search-index.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/resources/glass.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/resources/x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/search.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/serialized-form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/stylesheet.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/type-search-index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/type-search-index.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/Fenetre$BoutonListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/Fenetre$BoutonListener.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/Fenetre.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/Fenetre.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/elodie/calculatrice/Fenetre.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,10 +151,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/elodie/calculatrice/Fenetre.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="365" column="56" selection-start-line="365" selection-start-column="56" selection-end-line="365" selection-end-column="56" />
+            <state relative-caret-position="222">
+              <caret line="369" column="22" selection-start-line="369" selection-start-column="22" selection-end-line="369" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#22470#22471#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -97,12 +228,30 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="Calcultrice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Calcultrice" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Calcultrice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Calcultrice" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Calcultrice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Calcultrice" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Calcultrice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Calcultrice" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
               <item name="Calcultrice" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -123,15 +272,24 @@
               <item name="calculatrice" type="462c0819:PsiDirectoryNode" />
               <item name="vue" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Calcultrice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Calcultrice" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546448672257" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546448784428" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
@@ -147,7 +305,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Fenetre">
+  <component name="RunManager">
     <configuration name="Fenetre" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.elodie.calculatrice.Fenetre" />
       <module name="Calcultrice" />
@@ -161,33 +319,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.elodie.calculatrice.Main" />
-      <module name="Calcultrice" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.elodie.calculatrice.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.elodie.calculatrice.vue.Fenetre" />
-      <module name="Calcultrice" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Fenetre" />
-        <item itemvalue="Application.Main (1)" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -356,7 +490,14 @@
       <option name="project" value="LOCAL" />
       <updated>1546440018223</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="ajout de la méthode calcul() pour généricité des calculs.&#10;ajout de la javadoc">
+      <created>1546448743290</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1546448743290</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TodoView" selected-index="1">
@@ -370,7 +511,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Image Layers" order="0" />
       <window_info id="Designer" order="1" />
@@ -378,7 +518,7 @@
       <window_info id="Capture Tool" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info id="Structure" order="5" side_tool="true" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="6" visible="true" weight="0.24962178" />
+      <window_info content_ui="combo" id="Project" order="6" visible="true" weight="0.25340393" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3764321" />
@@ -478,41 +618,17 @@
     <MESSAGE value="ajout de la fonction newOpOrNot(), qui vérifie la nouvelle saisie suite au déclenchement de &quot;=&quot;. Si cette saisie est un chiffre, on efface le résultat précédent pour prendre en compte la nouvelle saisie." />
     <MESSAGE value="modification fonction firstzero(), ok. reste gestion des négatif lors de la première opération" />
     <MESSAGE value="gestion des opération négatives OK: conversion de inpus de ArrayList vers CopyOnWriteArrayList." />
-    <option name="LAST_COMMIT_MESSAGE" value="gestion des opération négatives OK: conversion de inpus de ArrayList vers CopyOnWriteArrayList." />
+    <MESSAGE value="ajout de la méthode calcul() pour généricité des calculs.&#10;ajout de la javadoc" />
+    <option name="LAST_COMMIT_MESSAGE" value="ajout de la méthode calcul() pour généricité des calculs.&#10;ajout de la javadoc" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/elodie/calculatrice/oberserver/Observable.java" />
     <entry file="file://$PROJECT_DIR$/src/com/elodie/calculatrice/oberserver/Observateur.java" />
     <entry file="file://$PROJECT_DIR$/src/com/elodie/calculatrice/model/TEST.java" />
     <entry file="file://$PROJECT_DIR$/src/com/elodie/calculatrice/model/Calcultatrice.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/elodie/calculatrice/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding>
-            <element signature="e#139#140#0" expanded="true" />
-            <element signature="e#182#183#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/elodie/calculatrice/vue/Fenetre.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-667">
-          <caret line="177" column="87" selection-start-line="177" selection-start-column="87" selection-end-line="177" selection-end-column="87" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/elodie/calculatrice/calcul/Calculs.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4301">
-          <caret line="253" column="5" lean-forward="true" selection-start-line="253" selection-start-column="5" selection-end-line="253" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/elodie/calculatrice/Main.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/elodie/calculatrice/vue/Fenetre.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/elodie/calculatrice/calcul/Calculs.java" />
     <entry file="file://$PROJECT_DIR$/src/com/elodie/calculatrice/vue/Bouton.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -529,13 +645,91 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/elodie/calculatrice/Fenetre.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="365" column="56" selection-start-line="365" selection-start-column="56" selection-end-line="365" selection-end-column="56" />
+        <state relative-caret-position="222">
+          <caret line="369" column="22" selection-start-line="369" selection-start-column="22" selection-end-line="369" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#22470#22471#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>Calcultrice:jar</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>11.0.1</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Calcultrice</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
