@@ -24,9 +24,6 @@ import static java.awt.Color.red;
  * <p>
  *     On lit ensuite tout ces différents morceaux d'affichage densemble, regroupé dans le corps principal de la calculatrice.
  * <p>
- *     On effectue les interactions selon les différents boutons activés de la calculatrice.
- * </p>
- * @version 2.0
  * @version 1.0
  * @author elojito
  */

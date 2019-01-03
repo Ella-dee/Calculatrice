@@ -3,13 +3,13 @@ package com.elodie.calculatrice.interactions;
 import com.elodie.calculatrice.vue.Bouton;
 import com.elodie.calculatrice.vue.Fenetre;
 import static com.elodie.calculatrice.interactions.Calculs.*;
-
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Arrays;
 import java.util.Objects;
 import java.util.concurrent.CopyOnWriteArrayList;
 
+//TODO ajouter un keylistener pour pouvoir utiliser les entrées clavier
 
 /**
  *<b>Chaque bouton lorsqu'il est cliqué déclenche une "écoute"</b>
@@ -20,7 +20,6 @@ import java.util.concurrent.CopyOnWriteArrayList;
  *     <li>appuyer sur toute autre touche</li>
  *</ul>
  **/
-
 public class BoutonListener implements ActionListener {
 
     //Ajout d'un tableau pour stocker les entrées utilisateur

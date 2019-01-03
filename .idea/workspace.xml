@@ -8,6 +8,33 @@
   <component name="ChangeListManager">
     <list default="true" id="719f3605-9a69-4669-a9e2-5090e7a2bdfd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/allclasses-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/allclasses-index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/allclasses.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/allclasses.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/allpackages-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/allpackages-index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/com/elodie/calculatrice/vue/Bouton.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/com/elodie/calculatrice/vue/Bouton.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/com/elodie/calculatrice/vue/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/com/elodie/calculatrice/vue/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/com/elodie/calculatrice/vue/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/com/elodie/calculatrice/vue/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/constant-values.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/constant-values.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/deprecated-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/deprecated-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/element-list" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/element-list" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/help-doc.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/help-doc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/index-files/index-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/index-files/index-1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/index-files/index-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/index-files/index-2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/index-files/index-3.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/index-files/index-3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/index-files/index-4.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/index-files/index-4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/index-files/index-5.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/index-files/index-5.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/index-files/index-6.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/index-files/index-6.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/index-files/index-7.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/index-files/index-7.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/member-search-index.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/member-search-index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/member-search-index.zip" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/member-search-index.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/overview-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/overview-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/overview-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/package-search-index.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/package-search-index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/package-search-index.zip" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/package-search-index.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/serialized-form.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/serialized-form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/type-search-index.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/type-search-index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/type-search-index.zip" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/doc/type-search-index.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/allclasses-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/allclasses-index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/allclasses.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/allclasses.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/allpackages-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/allpackages-index.html" afterDir="false" />
@@ -16,7 +43,6 @@
       <change beforePath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/com/elodie/calculatrice/vue/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/com/elodie/calculatrice/vue/package-tree.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/constant-values.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/constant-values.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/deprecated-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/deprecated-list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/element-list" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/element-list" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/help-doc.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/help-doc.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/index-files/index-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/index-files/index-1.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/index-files/index-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/index-files/index-2.html" afterDir="false" />
@@ -26,17 +52,12 @@
       <change beforePath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/index-files/index-6.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/index-files/index-6.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/index-files/index-7.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/index-files/index-7.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/member-search-index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/member-search-index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/member-search-index.zip" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/member-search-index.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/overview-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/overview-summary.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/overview-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/package-search-index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/package-search-index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/package-search-index.zip" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/package-search-index.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/serialized-form.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/serialized-form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/type-search-index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/type-search-index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/type-search-index.zip" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/doc/type-search-index.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/elodie/calculatrice/interactions/BoutonListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/interactions/BoutonListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/elodie/calculatrice/interactions/Calculs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/interactions/Calculs.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -165,8 +186,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="676" />
-    <option name="width" value="697" />
+    <option name="x" value="670" />
+    <option name="width" value="703" />
     <option name="height" value="735" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -242,7 +263,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546508973549" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546518775056" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -488,7 +509,14 @@
       <option name="project" value="LOCAL" />
       <updated>1546508781368</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="modif javadoc">
+      <created>1546509106613</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1546509106613</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TodoView" selected-index="1">
@@ -588,7 +616,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="ajout de la récupération du texte du bouton afin de l'afficher dans l'écran d'affichage lorsqu'il est cliqué" />
     <MESSAGE value="affichage des boutons cliqués, stockage dans un array, effacement lorsque bouton cancel appuyé" />
     <MESSAGE value="choix des opérations, calculs simple effectués avec toujours le même opérateur" />
     <MESSAGE value="ajout de regex afin de pouvoir changer d'opérateur dans la même opération" />
@@ -613,7 +640,8 @@
     <MESSAGE value="slight changes in private access" />
     <MESSAGE value="public - Calculatrice" />
     <MESSAGE value="renamed Calculatrice -&gt; Calculs" />
-    <option name="LAST_COMMIT_MESSAGE" value="renamed Calculatrice -&gt; Calculs" />
+    <MESSAGE value="modif javadoc" />
+    <option name="LAST_COMMIT_MESSAGE" value="modif javadoc" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/elodie/calculatrice/oberserver/Observable.java" />

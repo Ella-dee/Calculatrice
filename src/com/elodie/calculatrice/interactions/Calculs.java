@@ -1,14 +1,14 @@
 package com.elodie.calculatrice.interactions;
 
 import com.elodie.calculatrice.vue.Fenetre;
-
 import java.util.Arrays;
-
 import static com.elodie.calculatrice.interactions.BoutonListener.*;
 import static com.elodie.calculatrice.vue.Fenetre.nbr;
 
 /**
  * <b>Classe contient tous les calculs à effectuer, ainsi que les méthodes de cosmétiques d'affichage</b>
+ * @version 2.0
+ * @version 1.0
  */
 public class Calculs {
 
@@ -110,6 +110,7 @@ public class Calculs {
      *     <li>on effectue l'opération selon l'opérateur défini</li>
      *     <li>le résultat de celle-ci s'affiche à l'écran, la liste des entrées utilisateurs est remplacée par ce résultat.</li>
      * </ul>
+     * @since 2.0
      */
     protected static void calcul(){
         String trimmed = myTrimString( inputs.toString());
