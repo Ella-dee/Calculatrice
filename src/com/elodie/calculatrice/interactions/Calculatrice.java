@@ -7,7 +7,7 @@ import java.util.Arrays;
 import static com.elodie.calculatrice.interactions.BoutonListener.*;
 import static com.elodie.calculatrice.vue.Fenetre.nbr;
 
-public class Calculatrice {
+class Calculatrice {
 
     /**
      * <b>Méthode de formatage du texte</b>
@@ -43,7 +43,7 @@ public class Calculatrice {
      * @param str le résultat d'une opération parsé en String
      * @return le double vérifié, coupé ou non de sa virgule selon le cas, sous forme de chaine de carcatères
      */
-    public static String doubleEntier(String str){
+    protected static String doubleEntier(String str){
         String trimmed = myTrimString(str);
         String [] nbrAVerifier = trimmed.split("[.]");
         String beforeDot = myTrimString( nbrAVerifier[0]);
@@ -63,7 +63,7 @@ public class Calculatrice {
      * @param minus chaine servant de vérificateur, ici sera le signe "-"
      * @return true si le nombre est négatif, false s'il es positif
      */
-    public static boolean negativeNbrCheck(String str, String minus){
+    private static boolean negativeNbrCheck(String str, String minus){
         boolean negative;
         if(str.indexOf(minus) == 0){
             negative = true;
@@ -85,8 +85,7 @@ public class Calculatrice {
 
         if (lastOperator.length() > 1) {  //Si length>1, il y a plusieurs opérateurs de saisis à la suite.
             int sLenght = lastOperator.length();
-            String lastOp = lastOperator.substring( sLenght - 1 ); //On trouve le dernier opérateur saisi
-            clickedOperator = lastOp; //On le défini comme nouvel opérateur à prendre en compte
+            clickedOperator = lastOperator.substring( sLenght - 1 ); //On le défini comme nouvel opérateur à prendre en compte
             double firstNumber = findFirstNumber();
             inputs.clear();
             inputs.add(doubleEntier(String.valueOf( firstNumber)));
@@ -109,7 +108,7 @@ public class Calculatrice {
      *     <li>le résultat de celle-ci s'affiche à l'écran, la liste des entrées utilisateurs est remplacée par ce résultat.</li>
      * </ul>
      */
-    public static void calcul(){
+    protected static void calcul(){
         String trimmed = myTrimString( inputs.toString());
         Double firstNbr = findFirstNumber();
         Double secondNbr = findSecondNumber();
@@ -186,7 +185,7 @@ public class Calculatrice {
      * @see Calculatrice#negativeNbrCheck(String, String)
      * @return le premier nombre à calculer sous forme de double
      */
-    public static Double findFirstNumber(){
+    private static Double findFirstNumber(){
         String trimmed = myTrimString( inputs.toString());
         String [] nbrACalculer = trimmed.split("[+]|-|[*]|/");
         String firstString = "";
@@ -210,7 +209,7 @@ public class Calculatrice {
      * @see Calculatrice#negativeNbrCheck(String, String)
      * @return le deuxième nombre à calculer sous forme de double
      */
-    public static Double findSecondNumber(){
+    private static Double findSecondNumber(){
         String trimmed = myTrimString(inputs.toString());
         String [] nbrACalculer = trimmed.split("[+]|-|[*]|/");
         String secondString = "";

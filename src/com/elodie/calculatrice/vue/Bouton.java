@@ -5,7 +5,7 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
 public class Bouton extends JButton implements MouseListener {
-    protected String name;
+    private final String name;
 
     public Bouton(String str) {
         super( str );
