@@ -2,7 +2,7 @@ package com.elodie.calculatrice.interactions;
 
 import com.elodie.calculatrice.vue.Bouton;
 import com.elodie.calculatrice.vue.Fenetre;
-import static com.elodie.calculatrice.interactions.Calculatrice.*;
+import static com.elodie.calculatrice.interactions.Calculs.*;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -31,7 +31,7 @@ public class BoutonListener implements ActionListener {
          * <ul>
          * <li>Lorsqu'on appuie sur "C":
          *     <p>
-         *     L'affichage de la calculatrice passe à "0";
+         *     L'affichage de la Calculs passe à "0";
          *     La liste des entrées utilisateurs se vide.
          *     </p>
          * </li>
@@ -40,23 +40,23 @@ public class BoutonListener implements ActionListener {
          *         La fonction equalOp() se déclenche:
          *      <p>L'opération est effectuée et l'écran d'affichage renvoi le résultat de celle-ci
          *         </p>
-         *      @see Calculatrice#calcul()
-         *      @see Calculatrice#equalOp()
+         *      @see Calculs#calcul()
+         *      @see Calculs#equalOp()
          * </li>
          * <li>Lorsqu'on appuie sur toute autre touche de la calcultatrice:
          *     <p>Les entrées utlisateurs sont affichées à l'écran.
          *     <p>Si un opérateur est entré à la suite d'un autre, le dernier le remplace.</p>
-         * @see Calculatrice#operatorCheck()
+         * @see Calculs#operatorCheck()
          *      <p>Lorsqu'une opération est faisable suite au déclenchement d'un opérateur, le résultat de celle-ci s'affiche à l'écran,
          *         la liste des entrées utilisateurs est remplacée par ce résultat.</p>
-         *      @see Calculatrice#calcul()
-         *      @see Calculatrice#plusOp()
-         *      @see Calculatrice#minusOp()
-         *      @see Calculatrice#multiplyOp()
-         *      @see Calculatrice#divideOp()
+         *      @see Calculs#calcul()
+         *      @see Calculs#plusOp()
+         *      @see Calculs#minusOp()
+         *      @see Calculs#multiplyOp()
+         *      @see Calculs#divideOp()
          *      <p>Après une opération effectuée suite à "=", on vérifie selon la saisie suivante s'il s'agit d'une nouvelle opération,
          *      ou s'il s'agit de la même opération qui continue.</p>
-         *      @see Calculatrice#newOpOrNot()
+         *      @see Calculs#newOpOrNot()
          * </li>
          * </ul>
          * <p>Pour la cosmétique d'affichage:
@@ -64,11 +64,11 @@ public class BoutonListener implements ActionListener {
          *
          *     <li>
          *          Si un zéro est en première position, ne pas l'afficher (exemple: 034, doit apparaîre 34)
-         *          @see Calculatrice#firstZero()
+         *          @see Calculs#firstZero()
          *     </li>
          *     <li>
          *          Si un .0 est affiché lorsqu'il s'agit d'un nombre entier, ne pas l'afficher (exemple: 34.0, doit apparaîre 34)
-         *          @see Calculatrice#doubleEntier(String str)
+         *          @see Calculs#doubleEntier(String str)
          *     </li>
          * </ul></p>
          * @param e bouton cliqué

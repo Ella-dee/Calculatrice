@@ -1,11 +1,9 @@
 package com.elodie.calculatrice.vue;
 import com.elodie.calculatrice.interactions.BoutonListener;
-import com.elodie.calculatrice.interactions.Calculatrice;
 import javax.swing.*;
 import javax.swing.border.*;
 import java.awt.*;
 import java.util.Objects;
-import java.util.concurrent.CopyOnWriteArrayList;
 
 import static java.awt.Color.red;
 

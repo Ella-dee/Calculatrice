@@ -8,10 +8,9 @@
   <component name="ChangeListManager">
     <list default="true" id="719f3605-9a69-4669-a9e2-5090e7a2bdfd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/elodie/calculatrice/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/vue/Bouton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calcultrice/com/elodie/calculatrice/vue/Bouton.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/elodie/calculatrice/interactions/BoutonListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/interactions/BoutonListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/elodie/calculatrice/interactions/Calculatrice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/interactions/Calculatrice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/elodie/calculatrice/vue/Bouton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/vue/Bouton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/elodie/calculatrice/interactions/Calculatrice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/interactions/Calculs.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/elodie/calculatrice/vue/Fenetre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/vue/Fenetre.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -26,20 +25,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/elodie/calculatrice/vue/Fenetre.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="48" column="23" selection-start-line="48" selection-start-column="23" selection-end-line="48" selection-end-column="23" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="-1868">
+              <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/elodie/calculatrice/interactions/Calculatrice.java">
+        <entry file="file://$PROJECT_DIR$/src/com/elodie/calculatrice/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="110" column="4" selection-start-line="110" selection-start-column="4" selection-end-line="110" selection-end-column="4" />
+            <state relative-caret-position="119">
+              <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/elodie/calculatrice/interactions/Calculs.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -50,11 +55,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/elodie/calculatrice/interactions/BoutonListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2091">
-              <caret line="123" selection-start-line="123" selection-end-line="123" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="-1644">
+              <caret line="2" column="42" lean-forward="true" selection-start-line="2" selection-start-column="42" selection-end-line="2" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -81,6 +83,7 @@
       <find>Fenetre#</find>
       <find>Fenetre</find>
       <find>Calcultarice</find>
+      <find>Calculatrice</find>
     </findStrings>
     <replaceStrings>
       <replace>occurs</replace>
@@ -89,6 +92,7 @@
       <replace>Calculs#</replace>
       <replace>Calcultarice</replace>
       <replace>Calculatrice</replace>
+      <replace>Calculs</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -117,9 +121,10 @@
         <option value="$PROJECT_DIR$/src/com/elodie/calculatrice/calculs/Calculatrice.java" />
         <option value="$PROJECT_DIR$/src/com/elodie/calculatrice/interactions/Listeners.java" />
         <option value="$PROJECT_DIR$/src/com/elodie/calculatrice/Main.java" />
-        <option value="$PROJECT_DIR$/src/com/elodie/calculatrice/vue/Fenetre.java" />
-        <option value="$PROJECT_DIR$/src/com/elodie/calculatrice/interactions/Calculatrice.java" />
         <option value="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" />
+        <option value="$PROJECT_DIR$/src/com/elodie/calculatrice/interactions/Calculatrice.java" />
+        <option value="$PROJECT_DIR$/src/com/elodie/calculatrice/vue/Fenetre.java" />
+        <option value="$PROJECT_DIR$/src/com/elodie/calculatrice/interactions/Calculs.java" />
         <option value="$PROJECT_DIR$/src/com/elodie/calculatrice/interactions/BoutonListener.java" />
       </list>
     </option>
@@ -208,7 +213,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546508413113" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546508706836" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -433,7 +438,21 @@
       <option name="project" value="LOCAL" />
       <updated>1546508121951</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="slight changes in private access">
+      <created>1546508420712</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1546508420712</updated>
+    </task>
+    <task id="LOCAL-00027" summary="public - Calculatrice">
+      <created>1546508508421</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1546508508421</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TodoView" selected-index="1">
@@ -447,6 +466,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Image Layers" order="0" />
       <window_info id="Designer" order="1" />
@@ -454,7 +474,7 @@
       <window_info id="Capture Tool" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info id="Structure" order="5" side_tool="true" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="6" visible="true" weight="0.25718608" />
+      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.25718608" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3764321" />
@@ -466,7 +486,7 @@
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50075644" side_tool="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3289689" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3289689" />
-      <window_info active="true" anchor="bottom" id="Inspection Results" order="11" visible="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="Inspection Results" order="11" weight="0.3289689" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Maven" order="1" weight="0.32980332" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
@@ -532,8 +552,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="affichage de la calculatrice" />
-    <MESSAGE value="ajout version 1.0" />
     <MESSAGE value="ajout de la méthode interne BoutonListener dans la Classe Fenetre / ajout des appels addBoutonListener aux boutons / ajout de la condition effacer texte si le bouton &quot;C&quot; est cliqué" />
     <MESSAGE value="ajout de la récupération du texte du bouton afin de l'afficher dans l'écran d'affichage lorsqu'il est cliqué" />
     <MESSAGE value="affichage des boutons cliqués, stockage dans un array, effacement lorsque bouton cancel appuyé" />
@@ -557,7 +575,9 @@
     <MESSAGE value="ajout de la méthode calcul() pour généricité des calculs.&#10;ajout de la javadoc" />
     <MESSAGE value="refonte de la méthode calcul pour trouver l'opérateur à prendre en compte" />
     <MESSAGE value="refonte de l'organisation des packages et classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="refonte de l'organisation des packages et classes" />
+    <MESSAGE value="slight changes in private access" />
+    <MESSAGE value="public - Calculatrice" />
+    <option name="LAST_COMMIT_MESSAGE" value="public - Calculatrice" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/elodie/calculatrice/oberserver/Observable.java" />
@@ -566,13 +586,6 @@
     <entry file="file://$PROJECT_DIR$/src/com/elodie/calculatrice/model/Calcultatrice.java" />
     <entry file="file://$PROJECT_DIR$/src/com/elodie/calculatrice/vue/Fenetre.java" />
     <entry file="file://$PROJECT_DIR$/src/com/elodie/calculatrice/calcul/Calculs.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/elodie/calculatrice/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/elodie/calculatrice/vue/Bouton.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -587,26 +600,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/elodie/calculatrice/vue/Fenetre.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="48" column="23" selection-start-line="48" selection-start-column="23" selection-end-line="48" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/elodie/calculatrice/interactions/Calculatrice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="110" column="4" selection-start-line="110" selection-start-column="4" selection-end-line="110" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/META-INF/MANIFEST.MF">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -614,13 +607,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/elodie/calculatrice/interactions/BoutonListener.java">
+    <entry file="file://$PROJECT_DIR$/src/com/elodie/calculatrice/interactions/Calculs.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2091">
-          <caret line="123" selection-start-line="123" selection-end-line="123" />
+        <state relative-caret-position="153">
+          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/elodie/calculatrice/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/elodie/calculatrice/vue/Fenetre.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1868">
+          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/elodie/calculatrice/interactions/BoutonListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1644">
+          <caret line="2" column="42" lean-forward="true" selection-start-line="2" selection-start-column="42" selection-end-line="2" selection-end-column="42" />
         </state>
       </provider>
     </entry>

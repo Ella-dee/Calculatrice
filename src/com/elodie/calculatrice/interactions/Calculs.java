@@ -7,7 +7,7 @@ import java.util.Arrays;
 import static com.elodie.calculatrice.interactions.BoutonListener.*;
 import static com.elodie.calculatrice.vue.Fenetre.nbr;
 
-public class Calculatrice {
+public class Calculs {
 
     /**
      * <b>Méthode de formatage du texte</b>
@@ -99,9 +99,9 @@ public class Calculatrice {
      * <p>On cherche quel est l'opérateur utilisé dans l'opération:
      * <ul>
      *     <li>On cherche le premier nombre à calculer</li>
-     *      @see Calculatrice#findFirstNumber()
+     *      @see Calculs#findFirstNumber()
      *     <li>On cherche le deuxième nombre à calculer</li>
-     *      @see Calculatrice#findSecondNumber()
+     *      @see Calculs#findSecondNumber()
      *     <li>On cherche l'opérateur à prendre en compte pour effectuer l'opération</li>
      *     <li>on assigne ce retour à une chaîne de caractère "lastOperator" qui contient maintenant l'opérateur</li>
      *     <li>on effectue l'opération selon l'opérateur défini</li>
@@ -146,8 +146,8 @@ public class Calculatrice {
     /**
      * <b>Opération suite à l'enclenchement du bouton "=" égal</b>
      * <p>On défini l'attribut clicked comme étant cliqué: la fonction newOpOrNot en sera affectée;</p>
-     * @see Calculatrice#newOpOrNot()
-     * @see Calculatrice#calcul()
+     * @see Calculs#newOpOrNot()
+     * @see Calculs#calcul()
      */
     public static void equalOp() {
         clicked = 1;
@@ -182,7 +182,7 @@ public class Calculatrice {
      * <p>On stocke ces données dans une chaîne de caractères tableau, qu'on divise avec un opérateur pour séparateur.</p>
      * <p>La première partie de ce tableau (avant le séparateur), est donc notre premier nombre.</p>
      * <p>On vérifie si le nombre est négatif ou positif.</p>
-     * @see Calculatrice#negativeNbrCheck(String, String)
+     * @see Calculs#negativeNbrCheck(String, String)
      * @return le premier nombre à calculer sous forme de double
      */
     private static Double findFirstNumber(){
@@ -206,7 +206,7 @@ public class Calculatrice {
      * <p>On stocke ces données dans une chaîne de caractères tableau, qu'on divise avec un opérateur pour séparateur.</p>
      * <p>La deuxième partie de ce tableau (après le séparateur), est donc notre deuxième nombre.</p>
      * <p>On vérifie si le nombre est négatif ou positif.</p>
-     * @see Calculatrice#negativeNbrCheck(String, String)
+     * @see Calculs#negativeNbrCheck(String, String)
      * @return le deuxième nombre à calculer sous forme de double
      */
     private static Double findSecondNumber(){
@@ -223,9 +223,9 @@ public class Calculatrice {
     }
     /**
      * <b>Opération suite à l'enclenchement du bouton "+" plus</b>
-     * @see Calculatrice#newOpOrNot()
-     * @see Calculatrice#calcul()
-     * @see Calculatrice#negativeNbrCheck(String, String)
+     * @see Calculs#newOpOrNot()
+     * @see Calculs#calcul()
+     * @see Calculs#negativeNbrCheck(String, String)
      */
     public static void plusOp() {
         String trimmed = myTrimString( inputs.toString() );
@@ -245,9 +245,9 @@ public class Calculatrice {
 
     /**
      * <b>Opération suite à l'enclenchement du bouton "-" moins</b>
-     * @see Calculatrice#newOpOrNot()
-     * @see Calculatrice#calcul()
-     * @see Calculatrice#negativeNbrCheck(String, String)
+     * @see Calculs#newOpOrNot()
+     * @see Calculs#calcul()
+     * @see Calculs#negativeNbrCheck(String, String)
      */
     public static void minusOp() {
         String trimmed = myTrimString( inputs.toString() );
@@ -267,9 +267,9 @@ public class Calculatrice {
 
     /**
      * <b>Opération suite à l'enclenchement du bouton "*" multiplier</b>
-     * @see Calculatrice#newOpOrNot()
-     * @see Calculatrice#calcul()
-     * @see Calculatrice#negativeNbrCheck(String, String)
+     * @see Calculs#newOpOrNot()
+     * @see Calculs#calcul()
+     * @see Calculs#negativeNbrCheck(String, String)
      */
     public static void multiplyOp() {
         String trimmed = myTrimString( inputs.toString() );
@@ -288,9 +288,9 @@ public class Calculatrice {
     }
     /**
      * <b>Opération suite à l'enclenchement du bouton "/" diviser</b>
-     * @see Calculatrice#newOpOrNot()
-     * @see Calculatrice#calcul()
-     * @see Calculatrice#negativeNbrCheck(String, String)
+     * @see Calculs#newOpOrNot()
+     * @see Calculs#calcul()
+     * @see Calculs#negativeNbrCheck(String, String)
      */
     public static void divideOp(){
         String trimmed = myTrimString( inputs.toString() );
