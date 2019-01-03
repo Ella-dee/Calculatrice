@@ -7,7 +7,7 @@ import java.util.Arrays;
 import static com.elodie.calculatrice.interactions.BoutonListener.*;
 import static com.elodie.calculatrice.vue.Fenetre.nbr;
 
-class Calculatrice {
+public class Calculatrice {
 
     /**
      * <b>Méthode de formatage du texte</b>
