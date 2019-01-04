@@ -101,6 +101,25 @@ public class Calculs {
     }
 
     /**
+     * <b>La méthode cherche l'opérateur à prendre en compte pour effectuer l'opération</b>
+     * <p>On vide les entrées utilisateur des caractères n'étant pas des opérateurs.
+     * On choisi l'opérateur s'il ne se trouve pas en première position</p>
+     * @return l'opérateur à prendre en compte pour le calcul sous forme d'une chaîne de caractères
+     * @since 2.1
+     */
+    public static String setFindOperator() {
+        String trimmed = myTrimString( inputs.toString());
+        String[] findOperator = trimmed.split( "[0-9.]" );
+        String operator = "";
+        for (int i = 0; i < findOperator.length; i++) {
+            if ((Arrays.asList( Fenetre.ops ).contains( findOperator[i] )) && i > 0) {
+                operator = findOperator[i];
+                break;
+            }
+        }
+        return operator;
+    }
+    /**
      * <b>Méthode pour effectuer les différentes opérations</b>
      * <p>On récupère la liste des entrées utilisateurs
      * <p>On cherche quel est l'opérateur utilisé dans l'opération:
@@ -110,7 +129,7 @@ public class Calculs {
      *     <li>On cherche le deuxième nombre à calculer</li>
      *      @see Calculs#findSecondNumber()
      *     <li>On cherche l'opérateur à prendre en compte pour effectuer l'opération</li>
-     *     <li>on assigne ce retour à une chaîne de caractère "lastOperator" qui contient maintenant l'opérateur</li>
+     *      @see Calculs#setFindOperator()
      *     <li>on effectue l'opération selon l'opérateur défini</li>
      *     <li>le résultat de celle-ci s'affiche à l'écran, la liste des entrées utilisateurs est remplacée par ce résultat.</li>
      * </ul>
@@ -121,14 +140,7 @@ public class Calculs {
         Double firstNbr = findFirstNumber();
         Double secondNbr = findSecondNumber();
         double result = 0;
-        String[] findOperator = trimmed.split( "[0-9.]" );
-        String operator = "";
-        for(int i =0;i<findOperator.length;i++){
-            if ((Arrays.asList( Fenetre.ops ).contains( findOperator[i] ))&& i>0){
-                operator = findOperator[i];
-                break;
-            }
-        }
+        String operator = setFindOperator();
         switch (operator) {
             case "+":
                 result = firstNbr + secondNbr;
@@ -153,14 +165,32 @@ public class Calculs {
 
     /**
      * <b>Opération suite à l'enclenchement du bouton "=" égal</b>
-     * <p>On défini l'attribut clicked comme étant cliqué: la fonction newOpOrNot en sera affectée;</p>
+     * <p>Si les entrées utilisateurs ne sont pas vides, et si une opération est faisable: </p>
+     * <p>On défini l'attribut clicked comme étant cliqué: la fonction newOpOrNot en sera affectée;
+     * <p>On effectue le calcul en vérifiant si le premier nombre est négatif ou non.</p>
      * @see Calculs#newOpOrNot()
      * @see Calculs#calcul()
+     * @see Calculs#negativeNbrCheck(String, String)
+     * @since 2.1 : vérification chaîne vide et nombre négatif
      */
     public static void equalOp() {
-        clicked = 1;
-        calcul();
+        String trimmed = myTrimString( inputs.toString() );
+        String[] nbrACalculer = trimmed.split( "[+]|-|[*]|/" );
+        if (trimmed != null && !trimmed.isEmpty()) {
+            if (negativeNbrCheck( trimmed, "-" ) == false) {
+                if (nbrACalculer.length > 1) {
+                    clicked = 1;
+                    calcul();
+                }
+            }else if (negativeNbrCheck( trimmed, "-" ) == true) {
+                if (nbrACalculer.length > 2) {
+                    clicked = 1;
+                    calcul();
+                }
+            }
+        }
     }
+
 
     /**
      * <b>Méthode déclenchée si une opération "=" a été effectuée</b>

@@ -6,8 +6,9 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="719f3605-9a69-4669-a9e2-5090e7a2bdfd" name="Default Changelist" comment="ajout de 3 TODO">
+    <list default="true" id="719f3605-9a69-4669-a9e2-5090e7a2bdfd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/elodie/calculatrice/interactions/Calculs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/elodie/calculatrice/interactions/Calculs.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,7 +22,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/elodie/calculatrice/vue/Fenetre.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="529">
+            <state relative-caret-position="2261">
               <caret line="139" selection-start-line="55" selection-start-column="3" selection-end-line="139" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -42,8 +43,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/elodie/calculatrice/interactions/Calculs.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3213">
-              <caret line="189" column="61" lean-forward="true" selection-start-line="181" selection-start-column="20" selection-end-line="189" selection-end-column="61" />
+            <state relative-caret-position="248">
+              <caret line="173" column="62" selection-start-line="173" selection-start-column="62" selection-end-line="173" selection-end-column="62" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -54,7 +55,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/elodie/calculatrice/interactions/BoutonListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
+            <state relative-caret-position="51">
               <caret line="10" selection-start-line="10" selection-end-line="10" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -483,7 +484,14 @@
       <option name="project" value="LOCAL" />
       <updated>1546592397174</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="modification de la fonction firstzero() qui effaçait le zéro en première position même si on souhaitait écrire 0.34. fixed bug.">
+      <created>1546595413703</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1546595413703</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TodoView" selected-index="1">
@@ -505,10 +513,10 @@
       <window_info id="Capture Tool" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info id="Structure" order="5" side_tool="true" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="6" visible="true" weight="0.2685325" />
+      <window_info content_ui="combo" id="Project" order="6" visible="true" weight="0.27231467" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3764321" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3764321" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -583,7 +591,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="ajout de regex afin de pouvoir changer d'opérateur dans la même opération" />
     <MESSAGE value="ajout de la fonction &quot;=&quot; equalOp" />
     <MESSAGE value="modification de la fonction equalOp, bug réparé" />
     <MESSAGE value="ajout de la javadoc" />
@@ -608,7 +615,8 @@
     <MESSAGE value="modif javadoc" />
     <MESSAGE value="ajout d'un TODO, modif versionnage" />
     <MESSAGE value="ajout de 3 TODO" />
-    <option name="LAST_COMMIT_MESSAGE" value="ajout de 3 TODO" />
+    <MESSAGE value="modification de la fonction firstzero() qui effaçait le zéro en première position même si on souhaitait écrire 0.34. fixed bug." />
+    <option name="LAST_COMMIT_MESSAGE" value="modification de la fonction firstzero() qui effaçait le zéro en première position même si on souhaitait écrire 0.34. fixed bug." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/elodie/calculatrice/oberserver/Observable.java" />
@@ -669,8 +677,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/elodie/calculatrice/interactions/Calculs.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3213">
-          <caret line="189" column="61" lean-forward="true" selection-start-line="181" selection-start-column="20" selection-end-line="189" selection-end-column="61" />
+        <state relative-caret-position="282">
+          <caret line="187" column="5" selection-start-line="187" selection-start-column="5" selection-end-line="187" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
