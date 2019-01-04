@@ -560,3 +560,7 @@ public class Fenetre extends JFrame {
         Fenetre fen = new Fenetre();
     }
 }
+
+//TODO Bug : Appuyer sur = quand il n y a pas d operateur fait planter l application
+//TODO Bug : Appuyer 2 fois sur - pour mettre un nombre en négatif plante l application
+//TODO Bug : Impossible de taper 0.8 comme premier chiffre à calculer
