@@ -1,6 +1,4 @@
 package com.elodie.calculatrice.interactions;
-//TODO Bug : Appuyer sur = quand il n y a pas d operateur fait planter l application
-//TODO Bug : Appuyer 2 fois sur - pour mettre un nombre en négatif plante l application
 import com.elodie.calculatrice.vue.Fenetre;
 import java.util.Arrays;
 import static com.elodie.calculatrice.interactions.BoutonListener.*;
@@ -32,7 +30,7 @@ public class Calculs {
      * <b>Méthode cosmétique d'affichage</b>
      * <p>Si un zéro est en première position, ne pas l'afficher ( 034 = 34),
      * <p>sauf si un point '.' est saisi après celui-ci pour écrire un décimal</p>
-     * @since 2.1
+     * @since 2.1 : vérifie si un point est saisi après le zéro
      */
     public static void firstZero(){
         StringBuilder trimmed = new StringBuilder();
@@ -83,22 +81,56 @@ public class Calculs {
      * <b>Méthode vérifie qu'il n'y a pas double saisie d'opérateur.</b>
      * <p>Si on clique sur un opérateur à la suite d'un autre,
      * le dernier saisi est pris en compte.</p>
+     * @since 2.1 :
+     * <p>Vérifie maintenant le cas de la saisi d'un opérateur en premier instance d'affichage (sans chiffre saisi):
+     * <ul>
+     *     <li>le premier opérateur saisi ne peut être autre '-'</li>
+     *     <li>sinon l'affichage reste à zéro</li>
+     * </ul>
      */
     public static void operatorCheck() {
         String trimmed = myTrimString( inputs.toString() ); //On récupère les entrées utilisateurs sous forme de chaîne de caractère
-        String[] findOperator = trimmed.split( "[0-9.]" ); //Sur la chaîne initiale, on enlève les chiffres et le point situés avant le premier opérateur trouvé
-        int findOperatorLenght = findOperator.length; //On récupère sa longueur
-        String lastOperator = findOperator[findOperatorLenght-1]; //length-1 est égal au dernier caractère soit l'opérateur recherché
+        String[] nbrACalculer = trimmed.split( "[+]|-|[*]|/" );//Sur la chaîne initiale, on enlève les opérateurs
+        String[] findOperator = trimmed.split( "[0-9.]" ); //Sur la chaîne initiale, on enlève les chiffres
+        int findOperatorLenght = findOperator.length; //Longueur de la chaine d'opérateurs
+        String lastOperator = findOperator[findOperatorLenght - 1]; //length-1 est égal au dernier caractère soit l'opérateur recherché
 
-        if (lastOperator.length() > 1) {  //Si length>1, il y a plusieurs opérateurs de saisis à la suite.
-            int sLenght = lastOperator.length();
-            clickedOperator = lastOperator.substring( sLenght - 1 ); //On le défini comme nouvel opérateur à prendre en compte
-            double firstNumber = findFirstNumber();
+        if(nbrACalculer.length<1 && trimmed.charAt(0) != '-'){
+            //Si length<1, il n'y a pas de chiffre saisi,
+            // et si l'opérateur saisi n'est pas '-' il n'est pas nécessaire de l'afficher car on ne signe
+            // pas les nombres positifs
             inputs.clear();
-            inputs.add(doubleEntier(String.valueOf( firstNumber)));
-            inputs.add( clickedOperator );
+            inputs.add( "0" );
+        }
+        else if (lastOperator.length() > 1) { //Si length>1, il y a plusieurs opérateurs de saisis à la suite.
+            if (nbrACalculer.length < 1) {//Si il n'y a pas de chiffre saisi
+                if (trimmed.charAt( 0 ) == '-') { // Si le premier caractère est '-', on s'apprête à signer un négatif
+                    int sLenght = lastOperator.length();
+                    clickedOperator = lastOperator.substring( sLenght - 1 ); //On le défini comme nouvel opérateur à prendre en compte
+                    if(clickedOperator.equals("-")) { //Si le nouvel opérateur pris en compte est '-' on l'affiche
+                        inputs.clear();
+                        inputs.add( clickedOperator );
+                    }
+                    else if(!clickedOperator.equals( "-" )){ //Si le nouvel opérateur saisi pris en compte n'est pas '-', on ne l'affiche pas
+                        inputs.clear();
+                        inputs.add( "0" );
+                    }
+                }
+            }
+            else {
+                int sLenght = lastOperator.length();
+                clickedOperator = lastOperator.substring( sLenght - 1 ); //On le défini comme nouvel opérateur à prendre en compte
+                double firstNumber = findFirstNumber();
+                inputs.clear();
+                inputs.add( doubleEntier( String.valueOf( firstNumber ) ) );
+                inputs.add( clickedOperator );
+            }
+
         }
     }
+
+
+
 
     /**
      * <b>La méthode cherche l'opérateur à prendre en compte pour effectuer l'opération</b>
@@ -136,7 +168,6 @@ public class Calculs {
      * @since 2.0
      */
     protected static void calcul(){
-        String trimmed = myTrimString( inputs.toString());
         Double firstNbr = findFirstNumber();
         Double secondNbr = findSecondNumber();
         double result = 0;
