@@ -1,7 +1,6 @@
 package com.elodie.calculatrice.interactions;
 //TODO Bug : Appuyer sur = quand il n y a pas d operateur fait planter l application
 //TODO Bug : Appuyer 2 fois sur - pour mettre un nombre en négatif plante l application
-//TODO Bug : Impossible de taper 0.8 comme premier chiffre à calculer
 import com.elodie.calculatrice.vue.Fenetre;
 import java.util.Arrays;
 import static com.elodie.calculatrice.interactions.BoutonListener.*;
@@ -9,6 +8,7 @@ import static com.elodie.calculatrice.vue.Fenetre.nbr;
 
 /**
  * <b>Classe contient tous les calculs à effectuer, ainsi que les méthodes de cosmétiques d'affichage</b>
+ * @version 2.1
  * @version 2.0
  * @version 1.0
  */
@@ -30,12 +30,14 @@ public class Calculs {
 
     /**
      * <b>Méthode cosmétique d'affichage</b>
-     * <p>Si un zéro est en première position, ne pas l'afficher ( 034 = 34)</p>
+     * <p>Si un zéro est en première position, ne pas l'afficher ( 034 = 34),
+     * <p>sauf si un point '.' est saisi après celui-ci pour écrire un décimal</p>
+     * @since 2.1
      */
     public static void firstZero(){
         StringBuilder trimmed = new StringBuilder();
         trimmed.append(myTrimString( inputs.toString()));
-        if(trimmed.charAt( 0 ) == '0'){
+        if(trimmed.charAt( 0 ) == '0'&&trimmed.charAt( 1 )!= '.'){
             trimmed = trimmed.deleteCharAt( 0 );
             inputs.clear();
             inputs.add( trimmed );

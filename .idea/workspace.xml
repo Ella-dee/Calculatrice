@@ -6,7 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="719f3605-9a69-4669-a9e2-5090e7a2bdfd" name="Default Changelist" comment="">
+    <list default="true" id="719f3605-9a69-4669-a9e2-5090e7a2bdfd" name="Default Changelist" comment="ajout de 3 TODO">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -18,11 +18,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/elodie/calculatrice/vue/Fenetre.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="529">
-              <caret line="139" lean-forward="true" selection-start-line="55" selection-start-column="3" selection-end-line="139" />
+              <caret line="139" selection-start-line="55" selection-start-column="3" selection-end-line="139" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -39,11 +39,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/elodie/calculatrice/interactions/Calculs.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2550">
-              <caret line="153" column="28" selection-start-line="153" selection-start-column="28" selection-end-line="153" selection-end-column="28" />
+            <state relative-caret-position="3213">
+              <caret line="189" column="61" lean-forward="true" selection-start-line="181" selection-start-column="20" selection-end-line="189" selection-end-column="61" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -476,7 +476,14 @@
       <option name="project" value="LOCAL" />
       <updated>1546527724344</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="ajout de 3 TODO">
+      <created>1546592397174</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1546592397174</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TodoView" selected-index="1">
@@ -498,7 +505,7 @@
       <window_info id="Capture Tool" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info id="Structure" order="5" side_tool="true" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="6" visible="true" weight="0.2647504" />
+      <window_info content_ui="combo" id="Project" order="6" visible="true" weight="0.2685325" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3764321" />
@@ -576,7 +583,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="choix des opérations, calculs simple effectués avec toujours le même opérateur" />
     <MESSAGE value="ajout de regex afin de pouvoir changer d'opérateur dans la même opération" />
     <MESSAGE value="ajout de la fonction &quot;=&quot; equalOp" />
     <MESSAGE value="modification de la fonction equalOp, bug réparé" />
@@ -601,7 +607,8 @@
     <MESSAGE value="renamed Calculatrice -&gt; Calculs" />
     <MESSAGE value="modif javadoc" />
     <MESSAGE value="ajout d'un TODO, modif versionnage" />
-    <option name="LAST_COMMIT_MESSAGE" value="ajout d'un TODO, modif versionnage" />
+    <MESSAGE value="ajout de 3 TODO" />
+    <option name="LAST_COMMIT_MESSAGE" value="ajout de 3 TODO" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/elodie/calculatrice/oberserver/Observable.java" />
@@ -633,20 +640,20 @@
     <entry file="file://$PROJECT_DIR$/src/com/elodie/calculatrice/doc/allclasses.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/elodie/calculatrice/vue/Fenetre.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="139" selection-start-line="55" selection-start-column="3" selection-end-line="139" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/elodie/calculatrice/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/elodie/calculatrice/interactions/Calculs.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2550">
-          <caret line="153" column="28" selection-start-line="153" selection-start-column="28" selection-end-line="153" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -660,10 +667,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/elodie/calculatrice/vue/Fenetre.java">
+    <entry file="file://$PROJECT_DIR$/src/com/elodie/calculatrice/interactions/Calculs.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="139" lean-forward="true" selection-start-line="55" selection-start-column="3" selection-end-line="139" />
+        <state relative-caret-position="3213">
+          <caret line="189" column="61" lean-forward="true" selection-start-line="181" selection-start-column="20" selection-end-line="189" selection-end-column="61" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
